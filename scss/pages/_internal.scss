@@ -1,0 +1,857 @@
+// This could be the section for CMS flags
+.cms-pages {
+  background: $background-body;
+
+  &.first-page {
+    padding-top: 20px;
+  }
+
+  &.last-page {
+    padding-bottom: 20px;
+  }
+
+  .container .container {
+    width: 100%;
+  }
+}
+
+/** internal settings */
+#after-apply-title-container {
+  text-align: center;
+}
+
+#after-apply-job-table-header th  {
+  background-color: $white;
+  color: $text-color;
+}
+
+#job-results {
+  padding: 30px 0px;
+}
+
+#subscription-form p {
+  text-align: center;
+  margin-left: 0px;
+}
+
+// this class is present on JDP and terms and conditions
+.content-card {
+
+}
+
+// Internals section container
+.internals-section{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+// use this for 404 & 500
+.error-card { // ADD TO TEMPLATE ###
+  background-color: #eee;
+  text-align: center;
+  margin: 30px 0px;
+  padding: 30px;
+  box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+
+  p{
+    text-align: center;
+    i{
+      font-size: 60px;
+      color: $secondary-color;
+    }
+  }
+
+}
+
+// This set the style to ul of city suggesttion for search bar
+.list-group-item{
+  color: $text-color;
+  background-color: #fff;
+  border: 1px solid #ddd;
+
+  &.active,
+  &.active:focus,
+  &.active:hover {
+    color: $white;
+    background-color: $secondary-color;
+    border: 1px solid $secondary-color;
+  }
+}
+
+/*** JRP **/
+
+// JDP Dropdown sort mobile
+.mobile-dropdown-sort{
+  margin-top: 10px;
+
+  ul{
+    margin-bottom: 0px;
+
+    li{
+      @include on-event{
+        background-color: $secondary-color;
+        a{
+          color: $white;
+        }
+      }
+    }
+  }
+}
+
+.breadcrumb {
+  background-color: $background-body;
+  margin-bottom: 0px;
+  @include radius(3px);
+
+  // li.bread-crumb-item { // REMOVE TEMPLATE ###
+  li { // REMOVE TEMPLATE ###
+    a {
+      color: $secondary-color;
+      font-weight: bold;
+    }
+
+    &:first-child { // ADD TO TEMPLATE ## FOR SEARCH AND RE-ENGAGE
+      pointer-events: none;
+      cursor: default;
+    }
+
+    &:last-child {
+      a {
+        color: $text-color;
+        font-weight: bold;
+      }
+    }
+  }
+
+  // Breadcrumb items separator
+  >li+li:before {
+    padding: 0 5px;
+    color: $text-color;
+    content: "/\00a0";
+    font-weight: bold;
+  }
+}
+
+// pagination elements
+// not visible on XS
+.pagination>li {
+  &:first-child>a {
+  }
+
+  >a, >span {
+    font-weight: bold;
+    color: $secondary-color;
+    background-color: $background-body;
+    @include radius(50px);
+
+    @include on-event{
+      background-color: $background-body;
+      color: $secondary-color;
+      @include radius(50px);
+    }
+  }
+
+  &:hover>a{
+    background-color: $secondary-color;
+    color: $white;
+  }
+
+  &.active, &.active:hover {
+    >a {
+      background-color: $secondary-color;
+      color: $white;
+      @include radius(50px);
+    }
+  }
+}
+
+// main title on this page
+.search-results-title.label-text {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+// Envelop icon
+.fa-envelope-o {
+  color: $white;
+  background-color: $secondary-color;
+  margin-right: 15px;
+  padding: 10px;
+  @include radius(50px);
+}
+
+// text next to sign icon
+#sign-up-widget {
+  color: $secondary-color;
+  font-weight: bold;
+  text-transform: capitalize;  //Capitalize always
+}
+
+#jrp-desktop-table{
+  padding-top: 20px;
+}
+
+// Left column facets
+#jrp-desktop-facet-col {
+  background-color: $background-body;
+
+  // facets main parent
+  #desktop-facets-container {
+    background-color: $background-body;
+  }
+
+  // narrow search button
+  #narrow-search-header {
+    width: 100%;
+    background-color: $secondary-color;
+    text-transform: capitalize;
+    color: $white;
+    margin-bottom: 20px;
+  }
+
+  // facets body parent
+  #desktop-facets-body {
+    background-color: inherit;
+  }
+
+  // facet header
+  .caret-facet-category-header {
+    background-color: $secondary-color;
+    color: $white;
+    text-transform: uppercase;
+    width: 100%;
+    font-weight: bold;
+    // padding-left: 22px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    // border-top-left-radius: 5px;
+    // border-top-right-radius: 5px;
+  }
+
+  // items from facets
+  .caret-facet-item-container {
+    width: 100%;
+    color: $text-color;
+    background-color: $white;
+    border: 1px solid #ccc;
+    border-top: none;
+    font-weight: bold;
+
+    // Add to template **
+    padding-top: 8px;
+    padding-bottom: 8px;
+
+    &:first-child{
+      border-top: 1px solid #ccc;
+    }
+
+    .caret-facet-accent { // >>
+      transition: all 0.2s ease;
+      color: $primary-color;
+    }
+
+    @include on-event{ // Facet hover, focus, active
+      background-color: $text-color;
+      color: $white;
+
+      .caret-facet-accent{
+        color: $white;
+      }
+    }
+  }
+
+  // View more button parent
+  .view-facet-btn-container {
+    background-color: $background-body;
+    margin: 0px;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-top: none;
+    // border-bottom-left-radius: 5px;
+    // border-bottom-right-radius: 5px;
+
+    // view more button
+    a {
+      color: $text-color;
+      display: block;
+      text-align: center;
+
+      @include on-event {
+        text-decoration: underline;
+      }
+
+      // This adds a + icons to view more button
+      &:before {
+        content: '\f067';
+        font: normal normal normal 14px/1 FontAwesome;
+      }
+    }
+  }
+}
+
+.desktop-facets{
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  @include radius(0px);
+
+  margin-bottom: 10px; // ADD TO TEMPLATE ###
+}
+
+#desktop_CATEGORY_facets, #desktop_LOCATION_facets, #desktop_COMPANY_facets, #desktop_EMPLOYMENT_TYPE_facets{
+  // border-right:  1px solid #ccc;
+  // border-left:  1px solid #ccc;
+  // border-top:  1px solid #ccc;
+  // border-bottom:  1px solid #ccc;
+}
+
+#jrp-desktop-facet-col .desktop-facets:last-child{
+  padding-bottom: 0px;
+}
+
+// Jobs results table
+#job-result-table {
+
+  // Add to template **
+  .job-result-header {
+    background-color: $secondary-color;
+    padding-right: 2px;
+
+    a, span { // CMS update
+      color: $white;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+  }
+
+  // each job result
+  .job-result {
+    // border-top: solid 1px #ccc;
+
+    @include on-event {
+      background-color: $text-color;
+
+      td{
+        a.job-result-title,
+        &.job-result-location-cell,
+        &.job-result-date-posted-cell {
+          color: $white;
+        }
+      }
+
+      .glyphicon-menu-right {
+        color: $white;
+      }
+    }
+
+    td {
+      a.job-result-title {
+        color: $secondary-color;
+        font-weight: bold;
+
+        @include on-event {
+          // background-color: #ccc;
+        }
+      }
+
+      &.job-result-location-cell,
+      &.job-result-date-posted-cell {
+        color: $text-color;
+      }
+    }
+
+    .glyphicon-menu-right {
+      color: $secondary-color;
+    }
+  }
+}
+
+.next-mobile-page,
+.previous-mobile-page {
+  @extend .btn-general;
+}
+
+
+/*** no jobs message **/
+#no-jobs-message {
+  padding: 30px 15px;
+  text-align: center;
+}
+
+/*** JDP **/
+
+// JOB DETAILS FIXBUG
+#job-details-page .container .container {
+  // width: 100%;
+  // padding-left: 0;
+  // padding-right: 0;
+}
+
+#jdp-apply-button-top, #jdp-apply-button-bottom, #jdp-apply-button-bottom-mobile, #jdp-apply-button-top-mobile{
+  max-width: 185px;
+  margin: 0 auto;
+}
+
+.jdp-title-inner-container {
+  background-color: $background-body;
+  padding: 0px;
+}
+
+
+.jdp-title-container .jdp-job-title {
+  color: $primary-color;
+  font-weight: bold;
+  text-transform: uppercase;
+
+  .jdp-title-job-title{
+  }
+
+  .jdp-title-job-in{
+  }
+
+  .jdp-title-job-location{
+  }
+
+  .jdp-title-job-at{
+  }
+
+  .jdp-title-job-company{
+  }
+}
+
+#jdp-title-date-posted {
+  color: $text-color;
+
+  strong{
+  }
+}
+
+#jdp-not-ready-to-apply-link-top,
+#jdp-not-ready-to-apply-link-bottom {
+  text-transform: capitalize; // Capitalize always
+  text-align: center;
+  color: $primary-color;
+  font-weight: bold;
+}
+
+.job-details-content {
+  // border-top: 1px solid $grey;
+  background-color: $background-body;
+  padding-top: 0px;
+}
+
+.content-card-header {
+  font-weight: bold;
+  text-align: left;
+  color: $primary-color;
+  text-transform: capitalize;
+}
+
+.jdp-job-snapshot-card.content-card {
+  padding: 15px;
+  padding-top: 10px;
+  // border: 1px solid $grey;
+  @include radius(6px);
+
+  h2.content-card-header { //Snapshot header
+    margin: -15px;
+    margin-top: -5px;
+    padding: 15px;
+    padding-left: 22px;
+    padding-right: 22px;
+    // background: $grey;
+    text-transform: capitalize;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+  }
+}
+
+.snapshot-padding {
+  border-top: 2px solid $secondary-color;
+  padding-top: 15px;
+  margin-top: 15px;
+  line-height: 30px;
+
+  li{
+    padding-bottom: 15px;
+  }
+
+  .secondary-text-color {
+    color: $text-color;
+    font-weight: normal;
+  }
+
+  a.secondary-text-color{
+    color: $secondary-color;
+    font-weight: bold;
+  }
+
+  .snapshot-icon.secondary-text-color{
+    color: $secondary-color;
+    padding-top: 10px;
+    padding-right: 10px;
+  }
+
+  .snapshot-text{
+    strong{
+    }
+  }
+
+}
+
+#jdp-social-sharing-section{
+  border-top: 3px solid $secondary-color;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+#jdp-job-description-section{
+  margin-top: 0px; //Always
+  background-color: $background-body;
+  border-top: 3px solid $secondary-color;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+
+  .jdp-job-description-card{
+    margin-bottom: 0px;
+    padding-top: 0px;
+
+    p{
+      color: $text-color;
+    }
+  }
+}
+
+#jdp-job-requirements-section{
+  background-color: $background-body;
+  border-bottom: 3px solid $secondary-color;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+#jdp-breadcrumb-row {
+}
+
+.jdp-job-snapshot-card a {
+  font-weight: bold;
+  color: $primary-color;
+}
+
+#jdp-similar-jobs-row{
+  background-color: $background-body;
+  margin-left: 0px;
+  margin-right: 0px;
+  border: none;
+
+  h3 {
+    color: $primary-color;
+    padding-bottom: 10px;
+
+    b, strong{
+      // font-weight: bold;
+    }
+  }
+
+  .similar-jobs {
+    li {
+      a.similar-jobs-tag {
+        color: $secondary-color;
+        font-weight: bold;
+      }
+    }
+
+    >li+li:before{
+      padding: 0 0.55em;
+      color: $primary-color;
+      content: "|";
+    }
+  }
+}
+
+/** JOIN **/
+
+#join-entire-page-content .row {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+#join-page-content-section{
+  a {
+    color: $secondary-color;
+    font-size: 16px !important;
+
+    @include on-event {
+      color: $secondary-color;
+      text-decoration: underline;
+    }
+  }
+}
+
+.join-is-not-apply, .join-is-not-apply-mobile{
+  font-size: 16px;
+}
+
+.join-is-not-apply-mobile{
+  margin-top: 15px;
+}
+
+// Internals buttons
+#join-button, #join-button-mobile, .primary-button.search-jobs-button-404, #edit-preference-update-btn, #subscription-save-btn{
+  @extend .btn-general;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin: 0 auto;
+  max-width: 250px;
+
+  @include on-event {
+    font-size: 16px;
+    text-transform: uppercase;
+    margin: 0 auto;
+    max-width: 250px;
+  }
+}
+
+// Internals titles
+#after-apply-thank-you-header, #edit-preference-title, #subscription-title, #cb-legal-content-block h1, .error-card h1, #browse-by-header p{
+  @extend .internals-titles;
+  text-align: center;
+  color: $primary-color;
+  text-transform: uppercase;
+  padding-bottom: 15px;
+}
+
+// Internals subtitles
+#edit-preference-instructions, #edit-preference-form, #subscription-question-section, .error-card h2{
+
+  h3{
+    text-align: center;
+    text-transform: none;
+  }
+
+  h2{
+    text-align: left;
+    text-transform: none;
+    font-weight: bold;
+    padding-bottom: 10px;
+  }
+
+  p, a{
+    text-transform: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: $text-color;
+  }
+
+  a{
+    color: $secondary-color;
+
+    @include on-event{ // Add to template **
+      text-decoration: underline;
+    }
+  }
+
+  input{
+    font-size: 16px;
+  }
+
+  .subscription-options-section, #subscription-unsubscribe-all-section{
+    span{
+      text-transform: none;
+      font-size: 16px;
+      color: $text-color;
+      font-weight: bold;
+      padding-top: 10px;
+    }
+
+    p{
+      font-weight: normal;
+      text-align: left;
+      padding-bottom: 10px;
+      color: $text-color;
+    }
+
+    .subscription-check-box, #subscription-unsubscribe-all-input{
+      margin-left: 0px;
+    }
+  }
+}
+
+// Alerts
+#subscription-message-section{
+  p{
+    font-weight: bold;
+    text-align: center;
+  }
+}
+
+// Legal
+#cb-legal-content-block{
+  h2, p{
+    color: $text-color;
+  }
+
+  a{
+    color: $secondary-color;
+    @include on-event {
+      color: $secondary-color;
+      text-decoration: underline;
+    }
+  }
+}
+
+// Browse by
+.browse-by-country-tab{
+  background-color: $background-body;
+  color: $primary-color;
+
+  @include on-event {
+    background-color: $background-body;
+    color: $secondary-color;
+    text-decoration: underline;
+  }
+}
+
+// Location dropdown
+.search-bar-element.search-field-container.search-location-field{
+  position: relative;
+
+  ul#suggestions{
+    position: absolute;
+    left: 0px !important;
+    right: 0px !important;
+    width: 100% !important;
+    list-style: none !important;
+
+    li.autocompletefooter{
+      background-color: transparent;
+    }
+  }
+}
+
+//Edit preferences bug
+#edit-preference-view .col-xs-12 {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+// JRP facet selected
+#jrp-desktop-facet-col .selected-caret-facet-item-container {
+  border: none;
+  background-color: $background-body;
+}
+
+@media (min-width: 768px) {
+
+  /** JRP **/
+  /*** no jobs message **/
+  #no-jobs-message {
+    padding: 30px 15px;
+    text-align: left;
+  }
+
+  .jdp-title-container .jdp-job-title {
+  }
+
+  #job-result-table {
+    .job-result-header {
+      // background-color: $background-body;
+      // padding-right: 2px;
+
+      a, span { // CMS update
+        // color: $text-color;
+        // font-weight: bold;
+      }
+    }
+  }
+  /*** END JRP */
+
+  /** JDP **/
+  .jdp-top-apply-block-position{
+    padding-left: 0px;
+    width: 20%;
+  }
+
+  // Location dropdown
+  .search-bar-element.search-field-container.search-location-field{
+    ul#suggestions{
+      padding-right: 15px !important;
+    }
+  }
+
+}
+
+@media (min-width: 992px) {
+
+  /*** JRP **/
+  #jrp-desktop-facet-col {
+    #desktop-facets-body{
+      margin-top: 0px;
+    }
+
+    // Hidding Narrow button
+    #narrow-search-header {
+      display: none;
+    }
+
+    // facets
+    .desktop-facets {
+      @include radius(6px);
+      margin-bottom: 25px;
+    }
+
+    // title of the facet
+    .caret-facet-category-header, #job-result-table .job-result-header a, #job-result-table .job-result-header span {
+      font-size: 16px;
+    }
+
+    // childs of each facets
+    .caret-facet-item-container {
+      // background-color: $background-body;
+      width: 100%;
+      margin: 0px;
+
+      // color of the angle-right icon
+      .caret-facet-accent {
+        // color: $primary-color;
+      }
+    }
+  }
+
+  #job-result-table {
+    .job-result-header {
+      a, span { // CMS update
+        display: block;
+        font-size: 16px;
+        padding-top: 4px;
+        padding-bottom: 4px;
+      }
+    }
+  }
+
+  /** END JRP */
+}
+
+@media (min-width: 1200px) {
+  .cms-pages {
+  }
+
+  /*** JRP **/
+  #job-result-table .job-result-header{
+    a, span{ // CMS update
+      display: block;
+      font-size: 20px;
+      padding-top: 3px;
+      padding-bottom: 3px;
+    }
+  }
+
+  #jrp-desktop-facet-col .caret-facet-category-header {
+    font-size: 20px;
+  }
+  // /** END JRP **/
+}

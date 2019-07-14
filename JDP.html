@@ -1,0 +1,551 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html>
+<html lang="en-US" xmlns="http://www.w3.org/1999/xhtml" ng-app="pencilblueApp">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+  <title>Nando's Careers</title>
+
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+
+  <link rel="shortcut icon" href="img/favicon.png">
+
+  <link rel="stylesheet" type="text/css" href="assets/bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/bower_components/fontawesome/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/public/cms_base/version/6f4689d70986a2e2958d45f2da08a06746988a66/css/general_styles.css">
+  <link rel="stylesheet" type="text/css" href="assets/public/tn_job/version/6f4689d70986a2e2958d45f2da08a06746988a66/css/tn_job_styles.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <script type="text/javascript" src="assets/public/cms_base/version/6f4689d70986a2e2958d45f2da08a06746988a66/compiled_bower/required_bower_scripts.min.js"></script>
+
+</head>
+<body id="premium-body" ng-controller="PencilBlueController">
+
+  <div id="src-tracking-loader" ng-controller="SourceTrackingFrontController"></div>
+
+  <!-- Header -->
+  <header id="back-to-top" class="navbar navbar-default navbar-fixed-top affix" role="navigation" data-spy="affix" data-offset-top="0">
+    <!-- Top social -->
+    <section class="top-social hidden-xs">
+      <div class="container">
+        <div class="row">
+          <!-- Logo desktop -->
+          <div class="col-sm-4 col-md-3">
+            <a href="" class="logo-link-top" title="Nando's Careers">
+              <img class="logo" src="img/nandos-logo.png" alt="Nando's Careers">
+            </a>
+          </div>
+          <!-- End Logo desktop -->
+
+          <!-- Join our Talent Network -->
+          <div class="col-sm-4 col-sm-offset-4 col-md-4 col-md-offset-5 col-lg-4 col-lg-offset-5">
+            <div class="join-top pull-right">
+              <a href="/join" class="join-top-button" title="Join Our Talent Network"><i class="fa fa-caret-right" aria-hidden="true"></i> Join Our Talent Network</a>
+            </div>
+          </div>
+          <!-- End Join our Talent Network -->
+        </div>
+      </div>
+    </section>
+    <!-- End Top social -->
+
+    <!-- Top navbar -->
+    <section class="top-navbar">
+      <nav class="navbar navbar-default" role="navigation">
+        <!-- Container -->
+        <div class="container">
+          <!-- Navbar mobile -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar top-bar"></span>
+              <span class="icon-bar middle-bar"></span>
+              <span class="icon-bar bottom-bar"></span>
+            </button>
+            <!-- Logo mobile -->
+            <a href="" class="navbar-brand visible-xs" title="Nando's Careers">
+              <img src="img/nandos-logo.png" alt="Nando's Careers">
+            </a>
+            <!-- End Logo mobile -->
+          </div>
+          <!-- End Navbar mobile -->
+
+          <!-- Navbar collapse -->
+          <div class="collapse navbar-collapse" id="navbar">
+            <ul class="navbar-nav PrimaryNav with-indicator">
+              <!-- ^navigation^ -->
+
+              <li class="Nav-item">
+                <a href="http://careers.nandos.co.uk" target="_blank">Careers Home</a>
+              </li>
+              <li class="Nav-item">
+                <a href="http://careers.nandos.co.uk/about-us" target="_blank">About Us</a>
+              </li>
+              <li class="Nav-item">
+                <a href="http://careers.nandos.co.uk/roles" target="_blank">Roles</a>
+              </li>
+              <li class="Nav-item">
+                <a href="http://careers.nandos.co.uk/locations" target="_blank">Location</a>
+              </li>
+              <li class="Nav-item">
+                <a href="http://careers.nandos.co.uk/why-nandos" target="_blank">Why Nando's?</a>
+              </li>
+              <li class="Nav-item">
+                <a href="http://careers.nandos.co.uk/cv-builder" target="_blank">CV Builder</a>
+              </li>
+
+              <li class="Nav-item is-active">
+                <a href="search.html" target="">All Jobs</a>
+              </li>
+
+
+            </ul>
+
+            <ul class="navbar-nav visible-xs">
+              <li>
+                <a href="/join" title="Join Our Talent Network">Join Our Talent Network</a>
+              </li>
+            </ul>
+
+          </div>
+          <!-- End Navbar collapse -->
+        </div>
+        <!-- Container -->
+      </nav>
+    </section>
+    <!-- End Top navbar -->
+
+  </header>
+  <!-- End Header -->
+
+  <!-- Mobile search button -->
+  <button id="nav-search-button" type="button" class="navbar-toggle search-nav-icon search-toggle-button-mobile  collapsed" data-toggle="collapse" data-target="#SearchMobile" aria-expanded="false" title="Search">
+    <span class="sr-only">Toggle search</span>
+    <i class="fa fa-search"></i>
+  </button>
+  <!-- End Mobile search button -->
+
+
+  <div id="job-details-page" ng-controller="DetailsController" class="ng-scope">
+
+
+
+    <!-- Site Banner -->
+    <section class="nandos-banner">
+
+      <div class="banner-overlay">
+      </div>
+
+      <div class="banner-divider">
+      </div>
+
+      <!-- Desktop Search -->
+      <div id="SearchHomeDesktop" class="hidden-xs" aria-expanded="true">
+        <section id="search-box">
+
+          <div class="container" >
+            <div class="row" id="search-box-row">
+              <div class="col-xs-12" id="search-box-elements">
+
+                <!-- Search bar -->
+                <!-- ^tmp_elements=search_bar^ -->
+                <script type="text/javascript">
+                var disable_autocomplete = false;
+                var countryDropdownEnabled = false;
+                </script>
+
+                <div id="search-bar" class="" ng-controller="SearchBarController">
+                  <div class="search-bar-element search-field-container">
+                    <label for="search-keywords-field" class="hidden-xs search-bar-keyword-label label-text">Keyword:</label>
+                    <input id="search-keywords-field" type="text" class="search-bar-keyword-field form-control" ng-model="keywordInput" ng-keydown="checkKeywordKeydown($event)" placeholder="Job Title or Category">
+                  </div>
+
+                  <div class="search-bar-element search-field-container search-location-field">
+                    <label for="search-location-field" class="hidden-xs search-bar-location-label label-text">Location:</label>
+                    <input id="search-location-field" autocomplete="off" type="text" class="form-control search-bar-location-field " ng-keydown="checkLocationKeydown($event)" ng-model="locationInput" ng-change="getSuggestions()" placeholder="City or Postal Code">
+                    <ul id="suggestions" class="list-group autocomplete-list suggestions-list" role="list" ng-show="locationSuggestions.length > 0" ng-cloak>
+                      <li ng-repeat="location in locationSuggestions" class="blockSpan list-group-item" ng-click="addToSelectedTags($index)" ng-mouseover="$parent.selectedIndex=$index" ng-class="{active : selectedIndex===$index}">{{location}}</li>
+                    </ul>
+                  </div>
+                  <div class="search-bar-element search-widget-container">
+                    <a href id="primary-search-button" class="search-btn primary-button text-center label-text" ng-click="search()">Search</a>
+                  </div>
+                </div>
+                <!-- End Search bar -->
+                <p class="link-container">
+                  <a href="/search" id="link-jobs" title="View All Jobs at Nando's">- View All Jobs at Nando's -</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- End Desktop Search -->
+
+    </section>
+    <!-- End Site Banner -->
+
+    <!-- Mobile Search -->
+    <div id="SearchMobile" class="collapse" aria-expanded="true">
+      <section id="search-box" class="visible-xs">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12">
+
+              <!-- <div class="search-jobs-header">
+              <h3><i class="fa fa-search" aria-hidden="true"></i> SEARCH JOBS</h3>
+            </div> -->
+
+            <!-- Search bar -->
+            <!-- ^tmp_elements=search_bar^ -->
+            <script type="text/javascript">
+            var disable_autocomplete = false;
+            var countryDropdownEnabled = false;
+            </script>
+
+            <div id="search-bar" class="" ng-controller="SearchBarController">
+              <div class="search-bar-element search-field-container">
+                <label for="search-keywords-field" class="hidden-xs search-bar-keyword-label label-text">Keyword:</label>
+                <input id="search-keywords-field" type="text" class="search-bar-keyword-field form-control" ng-model="keywordInput" ng-keydown="checkKeywordKeydown($event)" placeholder="Job Title or Category">
+              </div>
+
+              <div class="search-bar-element search-field-container search-location-field">
+                <label for="search-location-field" class="hidden-xs search-bar-location-label label-text">Location:</label>
+                <input id="search-location-field" autocomplete="off" type="text" class="form-control search-bar-location-field " ng-keydown="checkLocationKeydown($event)" ng-model="locationInput" ng-change="getSuggestions()" placeholder="City or Postal Code">
+                <ul id="suggestions" class="list-group autocomplete-list suggestions-list" role="list" ng-show="locationSuggestions.length > 0" ng-cloak>
+                  <li ng-repeat="location in locationSuggestions" class="blockSpan list-group-item" ng-click="addToSelectedTags($index)" ng-mouseover="$parent.selectedIndex=$index" ng-class="{active : selectedIndex===$index}">{{location}}</li>
+                </ul>
+              </div>
+              <div class="search-bar-element search-widget-container">
+                <a href id="primary-search-button" class="search-btn primary-button text-center label-text" ng-click="search()">Search</a>
+              </div>
+            </div>
+            <!-- End Search bar -->
+            <p class="link-container">
+              <a href="/search" id="link-jobs" title="View All Jobs at Nando's">- View All Jobs at Nando's -</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <!-- End Mobile Search -->
+
+  <!-- Internals section -->
+  <section class="internals-section">
+    <!-- Job Details Page (JDP) Content -->
+    <div class="">
+      <!-- Job details view -->
+      <!-- ^tmp_elements=job_details_view^ -->
+      <!-- End Job details view -->
+
+      <!-- Job details view -->
+      <div class="container jdp-breadcrumb-container">
+        <div id="jdp-breadcrumb-row" class="row">
+          <div class="hidden-xs col-sm-12">
+            <ol class="breadcrumb">
+              <li class="bread-crumb-item"><a href="/en-US" class="bread-crumb-item-link">Nando's</a></li>
+              <li class="bread-crumb-item"><a href="/en-US/search" class="bread-crumb-item-link">All Jobs</a></li>
+              <li class="bread-crumb-item"><a href="/en-US/search?facetcountry=us&#38;facetcitystate=roxboro%2Cnc" class="bread-crumb-item-link">Roxboro, NC</a></li>
+              <li class="bread-crumb-item"><a href="/en-US/search?facetcountry=us&#38;facetcitystate=roxboro%2Cnc&#38;facetcategory=inventory" class="bread-crumb-item-link">Inventory</a></li>
+
+            </ol>
+          </div>
+        </div>
+
+      </div>
+      <div id="jdp-title-container" class="jdp-title-container">
+        <div class="jdp-title-container-overlay">
+          <div class="container">
+            <div class="row jdp-title-bar-row">
+              <div class="col-sm-12">
+                <div class="jdp-title-inner-container">
+                  <div class="jdp-title-block-position">
+                    <h1 id="jdp-title-job-title" class="jdp-job-title">Plant Inventory Analyst in Roxboro, NC at Nando's</h1>
+
+
+                    <div id="jdp-title-date-posted" class="job-date-posted">
+                      <strong>Date Posted:</strong> 5/31/2017
+                    </div>
+
+                  </div>
+                  <div class="jdp-top-apply-block-position">
+                    <div id="jdp-apply-section-top" class="jdp-apply-section">
+                      <a id="jdp-apply-button-top" ng-click="registerApplyStartEvent($event)" ng-href="{{ applyURL }}"
+                      class="primary-button block-element">Apply</a>
+                      <a id="jdp-not-ready-to-apply-link-top" href="/en-US/join" class="jdp-join-link">Not ready to Apply?</a>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="job-details-content">
+        <div class="container">
+          <div class="row">
+            <!-- Right Column -->
+            <div class="jdp-right-column col-md-4 col-md-push-8">
+              <!-- Social Sharing -->
+              <div id="jdp-social-sharing-section" class="hidden-sm hidden-xs">
+
+              </div>
+              <!-- Snapshot-->
+              <div id="jdp-job-snapshot-section">
+                <div class="jdp-job-snapshot-card content-card">
+                  <h2 class="content-card-header">Job Snapshot</h2>
+                  <ul class="snapshot-padding">
+                    <!-- Employee Type-->
+                    <li class="job-employee-type">
+                      <span class="glyphicon glyphicon-hourglass snapshot-icon secondary-text-color"></span>
+
+                      <div class="snapshot-text">
+                        <strong>Employee Type:</strong><br/>
+
+                        <div class="secondary-text-color">Full-Time</div>
+                      </div>
+                    </li>
+
+                    <!-- Location -->
+                    <li class="job-location">
+                      <i class="glyphicon glyphicon-map-marker snapshot-icon secondary-text-color"></i>
+
+                      <div class="snapshot-text">
+                        <strong>Location:</strong><br/>
+                        <a class="secondary-text-color job-snapshot-link"
+                        href="/en-US/search?facetcountry=us&facetcitystate=roxboro%2Cnc">
+                        <span class="jobLocation">Roxboro, NC</span>
+                      </a>
+                    </div>
+                  </li>
+
+                  <!-- Job Type -->
+                  <li class="job-categories">
+                    <span class="glyphicon glyphicon-triangle-top snapshot-icon secondary-text-color"></span>
+
+                    <div class="snapshot-text">
+                      <strong>Job Type:</strong><br/>
+                      <a class="secondary-text-color job-snapshot-link"
+                      href="/en-US/search?facetcategory=inventory">Inventory, Manufacturing</a>
+                    </div>
+                  </li>
+
+                  <!-- Experience -->
+                  <li class="job-experience">
+                    <i class="fa fa-briefcase snapshot-icon secondary-text-color"></i>
+
+                    <div class="snapshot-text">
+                      <strong>Experience:</strong><br/>
+
+                      <div class="secondary-text-color">At least 2 year(s)</div>
+                    </div>
+                  </li>
+
+                  <!-- Date Posted -->
+
+                  <!-- Job ID -->
+
+                </ul>
+              </div>
+
+            </div>
+            <!-- JDP Media Section-->
+            <div id="jdp-media-content-section" class="hidden-sm hidden-xs">
+
+            </div>
+            <!-- About Us -->
+            <div id="jdp-about-us-section" class="hidden-sm hidden-xs">
+
+            </div>
+          </div>
+
+          <!-- Left Column -->
+          <div class="jdp-left-column col-md-8 col-md-pull-4">
+            <!-- Job Description -->
+            <div id="jdp-job-description-section">
+              <div class="jdp-job-description-card content-card">
+                <h2 class="content-card-header">Job Description</h2>
+                <p>Our client, a global leader in the development and production
+                  of automotive drive train systems, is seeking a <strong><span style="text-decoration: underline">Plant Inventory Analyst</span></strong>. This position will be located in
+                  Roxboro, NC.</p>
+                  <p>&nbsp;</p>
+                  <p>&nbsp;</p>
+                  <p><strong><span style="text-decoration: underline">Responsibilities-
+                    Plant Inventory Analyst</span></strong></p>
+                    <ul>
+                      <li>
+                        <p>Responsible for the maintenance of inventory and
+                          cycle count activities.</p>
+                        </li>
+                        <li>
+                          <p>Assist in the daily functions of inventory
+                            processes for the facility.</p>
+                          </li>
+                          <li>
+                            <p>Perform cycle count programs and physical inventories.</p>
+                          </li>
+                          <li>
+                            <p>Monitor all store transfers for proper accuracy.</p>
+                          </li>
+                          <li>
+                            <p>Document and report damaged inventory.</p>
+                          </li>
+                          <li>
+                            <p>Maintain and reconcile all data and parameters
+                              in QAD.</p>
+                            </li>
+                            <li>
+                              <p>Provide corrective action when required to avoid
+                                inventory issues.</p>
+                              </li>
+                              <li>
+                                <p>Support Planners as required.</p>
+                              </li>
+                              <li>
+                                <p>Position reports to the Supply Chain Manager.</p>
+                              </li>
+                            </ul>
+                          </div>
+
+                        </div>
+                        <!-- Job Requirements -->
+                        <div id="jdp-job-requirements-section">
+
+                        </div>
+                        <!-- Desktop Apply Now Section-->
+                        <div id="jdp-bottom-apply-section">
+                          <div class="jdp-bottom-apply-card content-card">
+                            <div class="row">
+                              <div id="jdp-bottom-apply-company-logo-col" class="col-sm-3">
+
+                              </div>
+                              <div class="col-sm-3 col-md-5"></div>
+                              <div id="jdp-bottom-apply-button-col" class="col-sm-6 col-md-4">
+                                <div id="jdp-apply-section-bottom" class="jdp-apply-section">
+                                  <a id="jdp-apply-button-bottom" ng-click="registerApplyStartEvent($event)" ng-href="{{ applyURL }}"
+                                  class="primary-button block-element">Apply</a>
+                                  <a id="jdp-not-ready-to-apply-link-bottom" href="/en-US/join" class="jdp-join-link">Not ready to Apply?</a>
+                                </div>
+
+                              </div>
+                            </div>
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                    <div id="jdp-similar-jobs-row" class="row similar-jobs-container" >
+                      <div class="col-sm-12">
+                        <h3><b>CHECK OUT OUR SIMILAR JOBS</b></h3>
+                        <ol class="similar-jobs">
+                          <li class="similar-job-element"><a href="/en-US/search?keywords=Research Analyst" class="similar-jobs-tag">Research Analyst Jobs</a></li>
+                          <li class="similar-job-element"><a href="/en-US/search?keywords=Operations Analyst" class="similar-jobs-tag">Operations Analyst Jobs</a></li>
+                          <li class="similar-job-element"><a href="/en-US/search?location=Durham,North Carolina,US" class="similar-jobs-tag">Jobs in Durham, North Carolina</a></li>
+                          <li class="similar-job-element"><a href="/en-US/search?keywords=Research Analyst&#38;location=Durham,North Carolina,US" class="similar-jobs-tag">Research Analyst Jobs Durham, North Carolina</a></li>
+
+                        </ol>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+                <!-- End Job details view -->
+
+              </div>
+              <!-- End Job Details Page (JDP) Content -->
+
+            </section>
+            <!-- End Internals section -->
+
+          </div>
+
+          <!-- Footer -->
+          <footer>
+            <section class="footer-nav">
+              <div class="footer-container">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-xs-12">
+
+                      <ul class="list-inline">
+                        <li><a href="http://careers.nandos.co.uk" target="_blank" title="Careers Home">Careers Home</a></li>
+                        <li><a href="http://careers.nandos.co.uk/about-us" target="_blank" title="About Us">About Us</a></li>
+                        <li>  <a href="http://careers.nandos.co.uk/roles" target="_blank" title="Roles">Roles</a></li>
+                        <li>  <a href="http://careers.nandos.co.uk/locations" target="_blank" title="Location">Location</a></li>
+                        <li>  <a href="http://careers.nandos.co.uk/why-nandos" target="_blank" title="Why Nando's?">Why Nando's?</a></li>
+                        <li>  <a href="http://careers.nandos.co.uk/cv-builder" target="_blank" title="CV Builder">CV Builder</a></li>
+                        <li><a href="/search" title="All Jobs">All Jobs</a></li>
+                        <li><a href="/join" title="Join Our Talent Network">Join Our Talent Network</a></li>
+                      </ul>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section class="footer-social">
+              <div class="footer-container-social">
+                <div class="container">
+                  <div class="row">
+
+                    <div class="col-xs-12 hidden-xs">
+                      <ul class="list-inline">
+                        <li><a href="https://twitter.com/NandosUK" target="_blank" title="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                        <li><a href="https://www.facebook.com/Nandos" target="_blank" title="Twitter"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                        <li><a href="https://www.instagram.com/nandosuk" target="_blank" title="Instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                        <li><a href="https://www.youtube.com/user/Nandosuk" target="_blank" title="YouTube"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                        <li><a href="https://plus.google.com/+Nandos/posts" target="_blank" title="Google +"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                        <li><a href="https://open.spotify.com/user/nandosuk" target="_blank" title="Spotify"><i class="fa fa-spotify" aria-hidden="true"></i></a></li>
+                      </ul>
+                    </div>
+
+                    <div class="col-xs-12 visible-xs">
+                      <ul class="list-inline">
+                        <li><a href="https://twitter.com/NandosUK" target="_blank" title="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                        <li><a href="https://www.facebook.com/Nandos" target="_blank" title="Twitter"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                        <li><a href="https://www.instagram.com/nandosuk" target="_blank" title="Instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                      </ul>
+
+                    </div>
+
+                    <div class="col-xs-12 visible-xs">
+                      <ul class="list-inline">
+                        <li><a href="https://www.youtube.com/user/Nandosuk" target="_blank" title="YouTube"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                        <li><a href="https://plus.google.com/+Nandos/posts" target="_blank" title="Google +"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                        <li><a href="https://open.spotify.com/user/nandosuk" target="_blank" title="Spotify"><i class="fa fa-spotify" aria-hidden="true"></i></a></li>
+                      </ul>
+                    </div>
+
+                    <div class="col-xs-12 hidden-xs">
+                      <ul class="list-inline legal-list">
+                        <li><p>© Nando's 2017</p></li>
+                        <li><p>|</p></li>
+                        <li><p><a href="/privacy-policy" title="Privacy Policy">Privacy Policy</a></p></li>
+                        <li><p>|</p></li>
+                        <li><p><a href="/terms-and-conditions" title="Terms & Conditions">Terms & Conditions</a></p></li>
+                      </ul>
+                    </div>
+
+                    <div class="col-xs-12 visible-xs">
+                      <ul class="legal-list">
+                        <li><p>© Nando's 2017</p></li>
+                        <li><p><a href="/privacy-policy" title="Privacy Policy">Privacy Policy</a></p></li>
+                        <li><p><a href="/terms-and-conditions" title="Terms & Conditions">Terms & Conditions</a></p></li>
+                      </ul>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </section>
+
+          </footer>
+          <!-- End Footer -->
+
+          <script type="text/javascript" src="assets/public/cms_base/version/6f4689d70986a2e2958d45f2da08a06746988a66/angular/scripts/tn_scripts.min.js"></script>
+
+        </body>
+        </html>

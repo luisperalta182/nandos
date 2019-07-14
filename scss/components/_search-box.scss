@@ -1,0 +1,267 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles of search box and parent items
+// -----------------------------------------------------------------------------
+
+#search-bar {
+  width: 100%;
+
+  .search-bar-element {
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 15px;
+
+
+    input {
+      color: $text-color;
+      font-size: 16px;
+      height: 40px;
+      border: none;
+      border-radius: 0px;
+
+      // text-transform: uppercase;
+
+      @include placeholder{ // Add to Template
+        color: $text-color;
+      }
+    }
+
+    &:last-child {
+      padding-bottom: 10px;
+    }
+  }
+
+  a.search-btn {
+    background-color: $primary-color;
+    display: block;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+}
+
+/// Internal Search
+.search-toggle-button-mobile {
+  font-size: 18px;
+  font-weight: bold;
+  color: $secondary-color;
+  border-radius: 0px;
+  margin-top: 5px;
+  margin-right: 10px;
+  width: inherit;
+  position: absolute;
+  top: 0px;
+  right: 50px;
+  // z-index: 3;
+  z-index: 1040;
+}
+
+#SearchMobile {
+  background-color: $secondary-color;
+  background-size: contain;
+  margin: 0 auto;
+
+  #search-box{
+    padding-top: 50px;
+    padding-bottom: 30px;
+  }
+
+  #search-bar {
+    max-width: 480px;
+    margin: 0 auto;
+  }
+
+  h1{
+    color: $primary-color;
+    font-weight: bold;
+    text-align: center;
+    text-transform: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  p.link-container{
+    padding-top: 5px;
+    text-align: center;
+    margin-bottom: 0;
+
+    a#link-jobs{
+      color: $white;
+      font-size: 16px;
+      font-weight: bold;
+      text-transform: uppercase;
+
+      i{
+        padding-left: 3px;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+
+  /// This is a fix for element not using its full space
+  #SearchMobile {
+    float: none;
+    background-size: cover;
+    padding: 0px;
+  }
+
+  #SearchHomeDesktop, #SearchDesktop{
+    position: absolute;
+    bottom: 30%;
+    top: auto;
+    right: 0px;
+    left: 0px;
+
+    h1{
+      color: $white;
+      text-align: center;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+    }
+
+    #search-box{
+      #search-box-row{
+        background-color: rgba(0,0,0,0.5);
+        margin-right: 0px;
+        margin-left: 0px;
+
+        #search-box-elements{
+          padding-left: 30px;
+          padding-right: 30px;
+          padding-top: 20px;
+
+          padding-top: 30px;
+          padding-bottom: 10px;
+        }
+      }
+    }
+
+    p.link-container{
+      text-align: center;
+      padding-top: 20px;
+      padding-bottom: 10px;
+
+      a#link-jobs{
+        color: $white;
+        font-size: 16px;
+        text-transform: uppercase;
+        font-weight: bold;
+
+        i{
+          padding-left: 5px;
+        }
+      }
+    }
+
+    #search-bar {
+      display: table;
+
+      .search-bar-element {
+        display: table-cell;
+        width: 50%;
+        padding-right: 25px;
+        padding-left: 0px;
+        padding-bottom: 0px;
+        vertical-align: bottom;
+
+        input{
+          // height: 45px;
+        }
+
+        label {
+          color: $white;
+          // text-transform: capitalize;
+        }
+
+        &:last-child {
+          padding-bottom: 0px;
+          padding-right: 0px;
+          vertical-align: bottom;
+        }
+
+      }
+      a.search-btn {
+        font-weight: bold;
+        width: 170px;
+        background-color: $secondary-color;
+        // padding: 5px 15px;
+
+
+        @include on-event {
+          width: 170px;
+          background-color: shade($secondary-color, 15%)
+          // padding: 5px 15px;
+        }
+      }
+    }
+  }
+
+  #SearchDesktop{
+    position: relative;
+    top: auto;
+    bottom: auto;
+    left: auto;
+    right: auto;
+    // position: absolute;
+    // bottom: 70px;
+    // top: auto;
+    // right: 0px;
+    // left: 0px;
+
+    h1{
+      // color: $primary-color;
+      // text-align: left;
+      // margin-top: 10px;
+      // margin-bottom: 10px;
+    }
+
+    #search-box{
+      #search-box-row{
+        background-color: transparent;
+      }
+    }
+
+    p.link-container{
+      // text-align: center;
+      // padding-top: 10px;
+      // padding-bottom: 10px;
+
+      a#link-jobs{
+        // color: $secondary-color;
+        // font-size: 16px;
+        // text-transform: none;
+
+        i{
+          // padding-left: 5px;
+        }
+      }
+    }
+
+    #search-bar {
+      .search-bar-element {
+        label {
+          // text-transform: capitalize;
+        }
+      }
+      a.search-btn {
+        // width: 140px;
+        // padding: 5px 15px;
+
+        @include on-event {
+          // width: 140px;
+          // padding: 5px 15px;
+        }
+      }
+    }
+  }
+
+}
+
+@media (min-width:992px) {
+
+}
+
+@media (min-width: 1200px) {
+
+}

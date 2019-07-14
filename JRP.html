@@ -1,0 +1,1827 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html>
+<html lang="en-US" xmlns="http://www.w3.org/1999/xhtml" ng-app="pencilblueApp">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+  <title>Nando's Careers</title>
+
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+
+  <link rel="shortcut icon" href="img/favicon.png">
+
+  <link rel="stylesheet" type="text/css" href="assets/bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/bower_components/fontawesome/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/public/cms_base/version/6f4689d70986a2e2958d45f2da08a06746988a66/css/general_styles.css">
+  <link rel="stylesheet" type="text/css" href="assets/public/tn_job/version/6f4689d70986a2e2958d45f2da08a06746988a66/css/tn_job_styles.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <script type="text/javascript" src="assets/public/cms_base/version/6f4689d70986a2e2958d45f2da08a06746988a66/compiled_bower/required_bower_scripts.min.js"></script>
+
+</head>
+<body id="premium-body" ng-controller="PencilBlueController">
+
+  <div id="src-tracking-loader" ng-controller="SourceTrackingFrontController"></div>
+
+  <!-- Header -->
+  <header id="back-to-top" class="navbar navbar-default navbar-fixed-top affix" role="navigation" data-spy="affix" data-offset-top="0">
+    <!-- Top social -->
+    <section class="top-social hidden-xs">
+      <div class="container">
+        <div class="row">
+          <!-- Logo desktop -->
+          <div class="col-sm-4 col-md-3">
+            <a href="/" class="logo-link-top" title="Nando's Careers">
+              <img class="logo" src="img/nandos-logo.png" alt="Nando's Careers">
+            </a>
+          </div>
+          <!-- End Logo desktop -->
+
+          <!-- Join our Talent Network -->
+          <div class="col-sm-4 col-sm-offset-4 col-md-4 col-md-offset-5 col-lg-4 col-lg-offset-5">
+            <div class="join-top pull-right">
+              <a href="/join" class="join-top-button" title="Join Our Talent Network"><i class="fa fa-caret-right" aria-hidden="true"></i> Join Our Talent Network</a>
+            </div>
+          </div>
+          <!-- End Join our Talent Network -->
+        </div>
+      </div>
+    </section>
+    <!-- End Top social -->
+
+    <!-- Top navbar -->
+    <section class="top-navbar">
+      <nav class="navbar navbar-default" role="navigation">
+        <!-- Container -->
+        <div class="container">
+          <!-- Navbar mobile -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar top-bar"></span>
+              <span class="icon-bar middle-bar"></span>
+              <span class="icon-bar bottom-bar"></span>
+            </button>
+            <!-- Logo mobile -->
+            <a href="/" class="navbar-brand visible-xs" title="Nando's Careers">
+              <img src="img/nandos-logo.png" alt="Nando's Careers">
+            </a>
+            <!-- End Logo mobile -->
+          </div>
+          <!-- End Navbar mobile -->
+
+          <!-- Navbar collapse -->
+          <div class="collapse navbar-collapse" id="navbar">
+            <ul class="navbar-nav PrimaryNav with-indicator">
+              <!-- ^navigation^ -->
+
+              <li class="Nav-item">
+                <a href="http://careers.nandos.co.uk/" target="_blank" title="Careers Home">Careers Home</a>
+              </li>
+              <li class="Nav-item">
+                <a href="http://careers.nandos.co.uk/about-us/" target="_blank" title="About Us">About Us</a>
+              </li>
+              <li class="Nav-item">
+                <a href="http://careers.nandos.co.uk/roles/" target="_blank" title="Roles">Roles</a>
+              </li>
+              <li class="Nav-item">
+                <a href="http://careers.nandos.co.uk/locations/" target="_blank" title="Location">Location</a>
+              </li>
+              <li class="Nav-item">
+                <a href="http://careers.nandos.co.uk/why-nandos/" target="_blank" title="Why Nando's?">Why Nando's?</a>
+              </li>
+              <li class="Nav-item">
+                <a href="http://careers.nandos.co.uk/cv-builder/" target="_blank" title="CV Builder">CV Builder</a>
+              </li>
+              <li class="Nav-item is-active">
+                <a href="/search" target="" title="All Jobs">All Jobs</a>
+              </li>
+            </ul>
+
+            <ul class="navbar-nav visible-xs">
+              <li>
+                <a href="/join" title="Join Our Talent Network">Join Our Talent Network</a>
+              </li>
+            </ul>
+
+          </div>
+          <!-- End Navbar collapse -->
+        </div>
+        <!-- Container -->
+      </nav>
+    </section>
+    <!-- End Top navbar -->
+
+  </header>
+  <!-- End Header -->
+
+  <!-- Mobile search button -->
+  <button id="nav-search-button" type="button" class="navbar-toggle search-nav-icon search-toggle-button-mobile  collapsed" data-toggle="collapse" data-target="#SearchMobile" aria-expanded="false" title="Search">
+    <span class="sr-only">Toggle search</span>
+    <i class="fa fa-search"></i>
+  </button>
+  <!-- End Mobile search button -->
+
+  <!-- Site Banner -->
+  <section class="nandos-banner">
+
+    <div class="banner-overlay">
+    </div>
+
+    <div class="banner-divider">
+    </div>
+
+    <!-- Desktop Search -->
+    <div id="SearchHomeDesktop" class="hidden-xs" aria-expanded="true">
+      <section id="search-box">
+
+        <div class="container" >
+          <div class="row" id="search-box-row">
+            <div class="col-xs-12" id="search-box-elements">
+
+              <!-- Search bar -->
+              <!-- ^tmp_elements=search_bar^ -->
+              <script type="text/javascript">
+              var disable_autocomplete = false;
+              var countryDropdownEnabled = false;
+              </script>
+
+              <div id="search-bar" class="" ng-controller="SearchBarController">
+                <div class="search-bar-element search-field-container">
+                  <label for="search-keywords-field" class="hidden-xs search-bar-keyword-label label-text">Keyword:</label>
+                  <input id="search-keywords-field" type="text" class="search-bar-keyword-field form-control" ng-model="keywordInput" ng-keydown="checkKeywordKeydown($event)" placeholder="Job Title or Category">
+                </div>
+
+                <div class="search-bar-element search-field-container search-location-field">
+                  <label for="search-location-field" class="hidden-xs search-bar-location-label label-text">Location:</label>
+                  <input id="search-location-field" autocomplete="off" type="text" class="form-control search-bar-location-field " ng-keydown="checkLocationKeydown($event)" ng-model="locationInput" ng-change="getSuggestions()" placeholder="City or Postal Code">
+                  <ul id="suggestions" class="list-group autocomplete-list suggestions-list" role="list" ng-show="locationSuggestions.length > 0" ng-cloak>
+                    <li ng-repeat="location in locationSuggestions" class="blockSpan list-group-item" ng-click="addToSelectedTags($index)" ng-mouseover="$parent.selectedIndex=$index" ng-class="{active : selectedIndex===$index}">{{location}}</li>
+                  </ul>
+                </div>
+                <div class="search-bar-element search-widget-container">
+                  <a href id="primary-search-button" class="search-btn primary-button text-center label-text" ng-click="search()">Search</a>
+                </div>
+              </div>
+              <!-- End Search bar -->
+              <p class="link-container">
+                <a href="/search" id="link-jobs" title="View All Jobs at Nando's">- View All Jobs at Nando's -</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- End Desktop Search -->
+
+  </section>
+  <!-- End Site Banner -->
+
+  <!-- Mobile Search -->
+  <div id="SearchMobile" class="collapse" aria-expanded="true">
+    <section id="search-box" class="visible-xs">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+
+            <!-- <div class="search-jobs-header">
+            <h3><i class="fa fa-search" aria-hidden="true"></i> SEARCH JOBS</h3>
+          </div> -->
+
+          <!-- Search bar -->
+          <!-- ^tmp_elements=search_bar^ -->
+          <script type="text/javascript">
+          var disable_autocomplete = false;
+          var countryDropdownEnabled = false;
+          </script>
+
+          <div id="search-bar" class="" ng-controller="SearchBarController">
+            <div class="search-bar-element search-field-container">
+              <label for="search-keywords-field" class="hidden-xs search-bar-keyword-label label-text">Keyword:</label>
+              <input id="search-keywords-field" type="text" class="search-bar-keyword-field form-control" ng-model="keywordInput" ng-keydown="checkKeywordKeydown($event)" placeholder="Job Title or Category">
+            </div>
+
+            <div class="search-bar-element search-field-container search-location-field">
+              <label for="search-location-field" class="hidden-xs search-bar-location-label label-text">Location:</label>
+              <input id="search-location-field" autocomplete="off" type="text" class="form-control search-bar-location-field " ng-keydown="checkLocationKeydown($event)" ng-model="locationInput" ng-change="getSuggestions()" placeholder="City or Postal Code">
+              <ul id="suggestions" class="list-group autocomplete-list suggestions-list" role="list" ng-show="locationSuggestions.length > 0" ng-cloak>
+                <li ng-repeat="location in locationSuggestions" class="blockSpan list-group-item" ng-click="addToSelectedTags($index)" ng-mouseover="$parent.selectedIndex=$index" ng-class="{active : selectedIndex===$index}">{{location}}</li>
+              </ul>
+            </div>
+            <div class="search-bar-element search-widget-container">
+              <a href id="primary-search-button" class="search-btn primary-button text-center label-text" ng-click="search()">Search</a>
+            </div>
+          </div>
+          <!-- End Search bar -->
+          <p class="link-container">
+            <a href="/search" id="link-jobs" title="View All Jobs at Nando's">- View All Jobs at Nando's -</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+<!-- End Mobile Search -->
+
+<!-- Internals section -->
+<section class="internals-section">
+  <!-- Job Results Page (JRP) Content -->
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <!-- Breadcrumb -->
+        <!-- ^tmp_elements=jrp_elements=jrp_breadcrumb_row^ -->
+        <div id="jrp-breadcrumb-row-default" class="row hidden-xs hidden-sm">
+          <div class="col-sm-12 hidden-xs">
+            <ol class="breadcrumb">
+              <li class="bread-crumb-item"><a href="/en-US" class="bread-crumb-item-link">Nando's</a></li>
+              <li class="bread-crumb-item"><a href="/en-US/search" class="bread-crumb-item-link">All Jobs</a></li>
+
+            </ol>
+          </div>
+        </div>
+
+        <!-- End Breadcrumb -->
+
+        <!-- JRP Title row -->
+
+        <!-- ^tmp_elements=jrp_elements=jrp_title_row^ -->
+        <div id="jrp-spelling-row" class="row hidden">
+          <div class="col-xs-12">
+            <h4>^corrected_spelling^</h4>
+            <h5>^original_spelling^</h5>
+          </div>
+        </div>
+
+        <div id="jrp-title-row" class="row">
+          <div class="col-md-12 hidden-xs hidden-sm">
+            <h1 class="search-results-title label-text ">
+              124 Jobs at Nando's
+            </h1>
+            <strong>
+
+            </strong>
+          </div>
+        </div>
+
+        <!-- End JRP Title row -->
+
+        <!-- Jobs results -->
+
+        <!-- ^tmp_elements=job_results_view^ -->
+        <div id="job-results-page-main-content">
+        <style>
+        /*This has to be here due to the fact bootstrap adds an inline style to the elements listed that we need to override at certain resolutions.*/
+        @media only screen and (min-width: 992px) {
+          .facet-collapsable, #desktop-facets-body {
+            height: inherit !important;
+          }
+        }
+        </style>
+
+        <div id="jrp-mobile-sort-by-row" class="row visible-xs visible-sm">
+          <div class="mobile-sort-jobs ">
+            <div class="mobile-job-count-message">
+              124 Jobs sorted by:
+            </div>
+            <div class="mobile-dropdown-sort">
+
+              <div class="dropdown">
+                <a id="mobile-sort-title" href="#mobile-sort-options" class="dropdown-toggle" data-toggle="collapse">
+                  <div id="mobile-selected-option-text" class="primary-text-color">Relevance</div>
+                  <div id="mobile-selected-option-dropdown-arrow"><i class="fa fa-angle-down"></i></div>
+                </a>
+                <ul id="mobile-sort-options" class="collapse">
+                  <li class="">
+                    <a id="mobile-relevance-asc" href="/en-US/search">Relevance</a>
+                  </li>
+                  <li class="">
+                    <a id="mobile-title-asc" href="/en-US/search?orderby=title">Title (A-Z)</a>
+                  </li>
+                  <li class="">
+                    <a id="mobile-title-desc" href="/en-US/search?orderby=-title">Title (Z-A)</a>
+                  </li>
+                  <li class="hidden">
+                    <a id="mobile-company-asc" href="/en-US/search?orderby=company">Company Name (A-Z)</a>
+                  </li>
+                  <li class="hidden">
+                    <a id="mobile-company-desc" href="/en-US/search?orderby=-company">Company Name (Z-A)</a>
+                  </li>
+                  <li class="">
+                    <a id="mobile-location-az" href="/en-US/search?orderby=location">Location (A-Z)</a>
+                  </li>
+                  <li class="">
+                    <a id="mobile-location-za" href="/en-US/search?orderby=-location">Location (Z-A)</a>
+                  </li>
+                  <li class="">
+                    <a id="mobile-date-desc" href="/en-US/search?orderby=-date">Date Posted (Newest to Oldest)</a>
+                  </li>
+                  <li class="">
+                    <a id="mobile-date-asc" href="/en-US/search?orderby=date">Date Posted (Oldest to Newest)</a>
+                  </li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div id="jrp-join-and-pagination-row" class="row join-row">
+          <div id="jrp-join-section" class="join-container col-xs-12 col-sm-6">
+            <a id="sign-up-widget" class="jrp-sign-up-widget secondary-text-color" href="join.html">
+              <i class="fa fa-envelope-o sign-up-icon"></i>Sign up for job alert emails
+            </a>
+
+          </div>
+          <div id="jrp-pagination-section"
+          class="pagination-container   hidden-xs col-sm-6">
+          <ul class="pagination">
+
+            <li class="active jrp-pagination-number"><a href="/en-US/search?pagenumber=1">1</a></li>
+            <li class=" jrp-pagination-number"><a href="/en-US/search?pagenumber=2">2</a></li>
+            <li class=" jrp-pagination-number"><a href="/en-US/search?pagenumber=3">3</a></li>
+
+            <li class="jrp-desktop-next-page-element"><a class='next-page-caret' href='/en-US/search?pagenumber=2'>></a></li>
+
+          </ul>
+        </div>
+      </div>
+
+      <div id="jrp-desktop-table" class="row">
+        <div id="jrp-desktop-facet-col" class="col-xs-12 col-md-3 ">
+          <div id="desktop-facets-container" class="">
+            <script>
+            function toggleMobileFacets(current) {
+              $('.facet-collapsable').not($(current).next()).removeClass('in');
+            }
+            </script>
+            <h3 id="narrow-search-header" class="tertiary-background-color label-strong collapsed"
+            role="button" data-toggle="collapse" data-target="#desktop-facets-body" aria-expanded="false">
+            Narrow Search</h3>
+
+            <div id="desktop-facets-body" class="collapse">
+              <div class="desktop-facets">
+                <div onclick="toggleMobileFacets(this)" class="caret-facet-category-header CATEGORY-facet-header-section label-strong" data-toggle="collapse" data-target="#jrp-entire-CATEGORY-facet-section"
+                aria-expanded="false" role="button" resize-text>
+                Category
+                <i class="facet-arrow glyphicon glyphicon-menu-down hidden-md hidden-lg"></i>
+              </div>
+              <div id="jrp-entire-CATEGORY-facet-section" class="facet-collapsable collapse">
+
+                <div id="desktop_CATEGORY_facets">
+                  <a class="caret-facet-item-container " href="/en-US/search?facetcategory=manufacturing">
+                    <span class="caret-facet-title" resize-text>
+                      Manufacturing (82)
+                    </span>
+                    <span class="caret-facet-accent">
+                      >>
+                    </span>
+                  </a>
+                  <a class="selected-caret-facet-item-container hide" href="/en-US/search?facetcategory=manufacturing">
+                    <span class="caret-facet-title" resize-text>
+                      Manufacturing (82)
+                    </span>
+                    <span class="caret-facet-accent">
+                      x
+                    </span>
+                  </a>
+                  <a class="caret-facet-item-container " href="/en-US/search?facetcategory=engineering">
+                    <span class="caret-facet-title" resize-text>
+                      Engineering (58)
+                    </span>
+                    <span class="caret-facet-accent">
+                      >>
+                    </span>
+                  </a>
+                  <a class="selected-caret-facet-item-container hide" href="/en-US/search?facetcategory=engineering">
+                    <span class="caret-facet-title" resize-text>
+                      Engineering (58)
+                    </span>
+                    <span class="caret-facet-accent">
+                      x
+                    </span>
+                  </a>
+                  <a class="caret-facet-item-container " href="/en-US/search?facetcategory=management">
+                    <span class="caret-facet-title" resize-text>
+                      Management (30)
+                    </span>
+                    <span class="caret-facet-accent">
+                      >>
+                    </span>
+                  </a>
+                  <a class="selected-caret-facet-item-container hide" href="/en-US/search?facetcategory=management">
+                    <span class="caret-facet-title" resize-text>
+                      Management (30)
+                    </span>
+                    <span class="caret-facet-accent">
+                      x
+                    </span>
+                  </a>
+                  <a class="caret-facet-item-container " href="/en-US/search?facetcategory=skilled%20labor%20-%20trades">
+                    <span class="caret-facet-title" resize-text>
+                      Skilled Labor - Trades (15)
+                    </span>
+                    <span class="caret-facet-accent">
+                      >>
+                    </span>
+                  </a>
+                  <a class="selected-caret-facet-item-container hide" href="/en-US/search?facetcategory=skilled%20labor%20-%20trades">
+                    <span class="caret-facet-title" resize-text>
+                      Skilled Labor - Trades (15)
+                    </span>
+                    <span class="caret-facet-accent">
+                      x
+                    </span>
+                  </a>
+                  <a class="caret-facet-item-container " href="/en-US/search?facetcategory=qa%20-%20quality%20control">
+                    <span class="caret-facet-title" resize-text>
+                      QA - Quality Control (14)
+                    </span>
+                    <span class="caret-facet-accent">
+                      >>
+                    </span>
+                  </a>
+                  <a class="selected-caret-facet-item-container hide" href="/en-US/search?facetcategory=qa%20-%20quality%20control">
+                    <span class="caret-facet-title" resize-text>
+                      QA - Quality Control (14)
+                    </span>
+                    <span class="caret-facet-accent">
+                      x
+                    </span>
+                  </a>
+                  <a class="caret-facet-item-container " href="/en-US/search?facetcategory=other">
+                    <span class="caret-facet-title" resize-text>
+                      Other (13)
+                    </span>
+                    <span class="caret-facet-accent">
+                      >>
+                    </span>
+                  </a>
+                  <a class="selected-caret-facet-item-container hide" href="/en-US/search?facetcategory=other">
+                    <span class="caret-facet-title" resize-text>
+                      Other (13)
+                    </span>
+                    <span class="caret-facet-accent">
+                      x
+                    </span>
+                  </a>
+                  <a class="caret-facet-item-container " href="/en-US/search?facetcategory=sales">
+                    <span class="caret-facet-title" resize-text>
+                      Sales (8)
+                    </span>
+                    <span class="caret-facet-accent">
+                      >>
+                    </span>
+                  </a>
+                  <a class="selected-caret-facet-item-container hide" href="/en-US/search?facetcategory=sales">
+                    <span class="caret-facet-title" resize-text>
+                      Sales (8)
+                    </span>
+                    <span class="caret-facet-accent">
+                      x
+                    </span>
+                  </a>
+
+                  <div id="desktop_CATEGORY_collapsible">
+                    <a class="caret-facet-item-container " href="/en-US/search?facetcategory=facilities">
+                      <span class="caret-facet-title" resize-text>
+                        Facilities (8)
+                      </span>
+                      <span class="caret-facet-accent">
+                        >>
+                      </span>
+                    </a>
+                    <a class="selected-caret-facet-item-container hide" href="/en-US/search?facetcategory=facilities">
+                      <span class="caret-facet-title" resize-text>
+                        Facilities (8)
+                      </span>
+                      <span class="caret-facet-accent">
+                        x
+                      </span>
+                    </a>
+                    <a class="caret-facet-item-container " href="/en-US/search?facetcategory=installation%20-%20maint%20-%20repair">
+                      <span class="caret-facet-title" resize-text>
+                        Installation - Maint - Repair (8)
+                      </span>
+                      <span class="caret-facet-accent">
+                        >>
+                      </span>
+                    </a>
+                    <a class="selected-caret-facet-item-container hide" href="/en-US/search?facetcategory=installation%20-%20maint%20-%20repair">
+                      <span class="caret-facet-title" resize-text>
+                        Installation - Maint - Repair (8)
+                      </span>
+                      <span class="caret-facet-accent">
+                        x
+                      </span>
+                    </a>
+                    <a class="caret-facet-item-container " href="/en-US/search?facetcategory=information%20technology">
+                      <span class="caret-facet-title" resize-text>
+                        Information Technology (7)
+                      </span>
+                      <span class="caret-facet-accent">
+                        >>
+                      </span>
+                    </a>
+                    <a class="selected-caret-facet-item-container hide" href="/en-US/search?facetcategory=information%20technology">
+                      <span class="caret-facet-title" resize-text>
+                        Information Technology (7)
+                      </span>
+                      <span class="caret-facet-accent">
+                        x
+                      </span>
+                    </a>
+                    <a class="caret-facet-item-container " href="/en-US/search?facetcategory=accounting">
+                      <span class="caret-facet-title" resize-text>
+                        Accounting (6)
+                      </span>
+                      <span class="caret-facet-accent">
+                        >>
+                      </span>
+                    </a>
+                    <a class="selected-caret-facet-item-container hide" href="/en-US/search?facetcategory=accounting">
+                      <span class="caret-facet-title" resize-text>
+                        Accounting (6)
+                      </span>
+                      <span class="caret-facet-accent">
+                        x
+                      </span>
+                    </a>
+                    <a class="caret-facet-item-container " href="/en-US/search?facetcategory=supply%20chain">
+                      <span class="caret-facet-title" resize-text>
+                        Supply Chain (6)
+                      </span>
+                      <span class="caret-facet-accent">
+                        >>
+                      </span>
+                    </a>
+                    <a class="selected-caret-facet-item-container hide" href="/en-US/search?facetcategory=supply%20chain">
+                      <span class="caret-facet-title" resize-text>
+                        Supply Chain (6)
+                      </span>
+                      <span class="caret-facet-accent">
+                        x
+                      </span>
+                    </a>
+                    <a class="caret-facet-item-container " href="/en-US/search?facetcategory=purchasing%20-%20procurement">
+                      <span class="caret-facet-title" resize-text>
+                        Purchasing - Procurement (6)
+                      </span>
+                      <span class="caret-facet-accent">
+                        >>
+                      </span>
+                    </a>
+                    <a class="selected-caret-facet-item-container hide" href="/en-US/search?facetcategory=purchasing%20-%20procurement">
+                      <span class="caret-facet-title" resize-text>
+                        Purchasing - Procurement (6)
+                      </span>
+                      <span class="caret-facet-accent">
+                        x
+                      </span>
+                    </a>
+                    <a class="caret-facet-item-container " href="/en-US/search?facetcategory=business%20development">
+                      <span class="caret-facet-title" resize-text>
+                        Business Development (6)
+                      </span>
+                      <span class="caret-facet-accent">
+                        >>
+                      </span>
+                    </a>
+                    <a class="selected-caret-facet-item-container hide" href="/en-US/search?facetcategory=business%20development">
+                      <span class="caret-facet-title" resize-text>
+                        Business Development (6)
+                      </span>
+                      <span class="caret-facet-accent">
+                        x
+                      </span>
+                    </a>
+
+                  </div>
+                </div>
+                <script>
+                $(function() {
+                  $('#desktop_CATEGORY_collapsible').addClass('collapse');
+                  $("#desktop_CATEGORY_collapsed_facet_text").click(function () {
+                    if ($("#desktop_CATEGORY_collapsible").hasClass('in')) {
+                      $("#desktop_CATEGORY_collapsed_facet_text").text('View More');
+                    } else {
+                      $("#desktop_CATEGORY_collapsed_facet_text").text('View Less');
+                    }
+                  });
+                });
+                </script>
+                <div class="view-facet-btn-container " >
+                  <a id="desktop_CATEGORY_collapsed_facet_text"
+                  class="view_facet_text collapsed"
+                  role="button"
+                  data-toggle="collapse"
+                  data-target="#desktop_CATEGORY_collapsible"
+                  href="">
+                  View More
+                </a>
+              </div>
+
+            </div>
+          </div>
+          <div class="desktop-facets">
+            <div onclick="toggleMobileFacets(this)" class="caret-facet-category-header LOCATION-facet-header-section label-strong" data-toggle="collapse" data-target="#jrp-entire-LOCATION-facet-section"
+            aria-expanded="false" role="button" resize-text>
+            Location
+            <i class="facet-arrow glyphicon glyphicon-menu-down hidden-md hidden-lg"></i>
+          </div>
+          <div id="jrp-entire-LOCATION-facet-section" class="facet-collapsable collapse">
+
+            <div id="desktop_LOCATION_facets">
+              <a class="caret-facet-item-container " href="/en-US/search?facetcitystate=jamestown%2Cny">
+                <span class="caret-facet-title" resize-text>
+                  Jamestown, NY (10)
+                </span>
+                <span class="caret-facet-accent">
+                  >>
+                </span>
+              </a>
+              <a class="selected-caret-facet-item-container hide" href="/en-US/search?facetcitystate=jamestown%2Cny">
+                <span class="caret-facet-title" resize-text>
+                  Jamestown, NY (10)
+                </span>
+                <span class="caret-facet-accent">
+                  x
+                </span>
+              </a>
+              <a class="caret-facet-item-container " href="/en-US/search?facetcitystate=roxboro%2Cnc">
+                <span class="caret-facet-title" resize-text>
+                  Roxboro, NC (8)
+                </span>
+                <span class="caret-facet-accent">
+                  >>
+                </span>
+              </a>
+              <a class="selected-caret-facet-item-container hide" href="/en-US/search?facetcitystate=roxboro%2Cnc">
+                <span class="caret-facet-title" resize-text>
+                  Roxboro, NC (8)
+                </span>
+                <span class="caret-facet-accent">
+                  x
+                </span>
+              </a>
+              <a class="caret-facet-item-container " href="/en-US/search?facetcitystate=dallas%2Ctx">
+                <span class="caret-facet-title" resize-text>
+                  Dallas, TX (6)
+                </span>
+                <span class="caret-facet-accent">
+                  >>
+                </span>
+              </a>
+              <a class="selected-caret-facet-item-container hide" href="/en-US/search?facetcitystate=dallas%2Ctx">
+                <span class="caret-facet-title" resize-text>
+                  Dallas, TX (6)
+                </span>
+                <span class="caret-facet-accent">
+                  x
+                </span>
+              </a>
+              <a class="caret-facet-item-container " href="/en-US/search?facetcitystate=eau%20claire%2Cwi">
+                <span class="caret-facet-title" resize-text>
+                  Eau Claire, WI (6)
+                </span>
+                <span class="caret-facet-accent">
+                  >>
+                </span>
+              </a>
+              <a class="selected-caret-facet-item-container hide" href="/en-US/search?facetcitystate=eau%20claire%2Cwi">
+                <span class="caret-facet-title" resize-text>
+                  Eau Claire, WI (6)
+                </span>
+                <span class="caret-facet-accent">
+                  x
+                </span>
+              </a>
+              <a class="caret-facet-item-container " href="/en-US/search?facetcitystate=gallipolis%2Coh">
+                <span class="caret-facet-title" resize-text>
+                  Gallipolis, OH (6)
+                </span>
+                <span class="caret-facet-accent">
+                  >>
+                </span>
+              </a>
+              <a class="selected-caret-facet-item-container hide" href="/en-US/search?facetcitystate=gallipolis%2Coh">
+                <span class="caret-facet-title" resize-text>
+                  Gallipolis, OH (6)
+                </span>
+                <span class="caret-facet-accent">
+                  x
+                </span>
+              </a>
+              <a class="caret-facet-item-container " href="/en-US/search?facetcitystate=nashville%2Ctn">
+                <span class="caret-facet-title" resize-text>
+                  Nashville, TN (6)
+                </span>
+                <span class="caret-facet-accent">
+                  >>
+                </span>
+              </a>
+              <a class="selected-caret-facet-item-container hide" href="/en-US/search?facetcitystate=nashville%2Ctn">
+                <span class="caret-facet-title" resize-text>
+                  Nashville, TN (6)
+                </span>
+                <span class="caret-facet-accent">
+                  x
+                </span>
+              </a>
+              <a class="caret-facet-item-container " href="/en-US/search?facetcitystate=rockford%2Cil">
+                <span class="caret-facet-title" resize-text>
+                  Rockford, IL (6)
+                </span>
+                <span class="caret-facet-accent">
+                  >>
+                </span>
+              </a>
+              <a class="selected-caret-facet-item-container hide" href="/en-US/search?facetcitystate=rockford%2Cil">
+                <span class="caret-facet-title" resize-text>
+                  Rockford, IL (6)
+                </span>
+                <span class="caret-facet-accent">
+                  x
+                </span>
+              </a>
+
+              <div id="desktop_LOCATION_collapsible">
+                <a class="caret-facet-item-container " href="/en-US/search?facetcitystate=durham%2Cnc">
+                  <span class="caret-facet-title" resize-text>
+                    Durham, NC (4)
+                  </span>
+                  <span class="caret-facet-accent">
+                    >>
+                  </span>
+                </a>
+                <a class="selected-caret-facet-item-container hide" href="/en-US/search?facetcitystate=durham%2Cnc">
+                  <span class="caret-facet-title" resize-text>
+                    Durham, NC (4)
+                  </span>
+                  <span class="caret-facet-accent">
+                    x
+                  </span>
+                </a>
+                <a class="caret-facet-item-container " href="/en-US/search?facetcitystate=east%20saint%20louis%2Cil">
+                  <span class="caret-facet-title" resize-text>
+                    East Saint Louis, IL (4)
+                  </span>
+                  <span class="caret-facet-accent">
+                    >>
+                  </span>
+                </a>
+                <a class="selected-caret-facet-item-container hide" href="/en-US/search?facetcitystate=east%20saint%20louis%2Cil">
+                  <span class="caret-facet-title" resize-text>
+                    East Saint Louis, IL (4)
+                  </span>
+                  <span class="caret-facet-accent">
+                    x
+                  </span>
+                </a>
+                <a class="caret-facet-item-container " href="/en-US/search?facetcitystate=framingham%2Cma">
+                  <span class="caret-facet-title" resize-text>
+                    Framingham, MA (4)
+                  </span>
+                  <span class="caret-facet-accent">
+                    >>
+                  </span>
+                </a>
+                <a class="selected-caret-facet-item-container hide" href="/en-US/search?facetcitystate=framingham%2Cma">
+                  <span class="caret-facet-title" resize-text>
+                    Framingham, MA (4)
+                  </span>
+                  <span class="caret-facet-accent">
+                    x
+                  </span>
+                </a>
+                <a class="caret-facet-item-container " href="/en-US/search?facetcitystate=houston%2Ctx">
+                  <span class="caret-facet-title" resize-text>
+                    Houston, TX (4)
+                  </span>
+                  <span class="caret-facet-accent">
+                    >>
+                  </span>
+                </a>
+                <a class="selected-caret-facet-item-container hide" href="/en-US/search?facetcitystate=houston%2Ctx">
+                  <span class="caret-facet-title" resize-text>
+                    Houston, TX (4)
+                  </span>
+                  <span class="caret-facet-accent">
+                    x
+                  </span>
+                </a>
+                <a class="caret-facet-item-container " href="/en-US/search?facetcitystate=morganton%2Cnc">
+                  <span class="caret-facet-title" resize-text>
+                    Morganton, NC (4)
+                  </span>
+                  <span class="caret-facet-accent">
+                    >>
+                  </span>
+                </a>
+                <a class="selected-caret-facet-item-container hide" href="/en-US/search?facetcitystate=morganton%2Cnc">
+                  <span class="caret-facet-title" resize-text>
+                    Morganton, NC (4)
+                  </span>
+                  <span class="caret-facet-accent">
+                    x
+                  </span>
+                </a>
+                <a class="caret-facet-item-container " href="/en-US/search?facetcitystate=binghamton%2Cny">
+                  <span class="caret-facet-title" resize-text>
+                    Binghamton, NY (2)
+                  </span>
+                  <span class="caret-facet-accent">
+                    >>
+                  </span>
+                </a>
+                <a class="selected-caret-facet-item-container hide" href="/en-US/search?facetcitystate=binghamton%2Cny">
+                  <span class="caret-facet-title" resize-text>
+                    Binghamton, NY (2)
+                  </span>
+                  <span class="caret-facet-accent">
+                    x
+                  </span>
+                </a>
+                <a class="caret-facet-item-container " href="/en-US/search?facetcitystate=bowling%20green%2Coh">
+                  <span class="caret-facet-title" resize-text>
+                    Bowling Green, OH (2)
+                  </span>
+                  <span class="caret-facet-accent">
+                    >>
+                  </span>
+                </a>
+                <a class="selected-caret-facet-item-container hide" href="/en-US/search?facetcitystate=bowling%20green%2Coh">
+                  <span class="caret-facet-title" resize-text>
+                    Bowling Green, OH (2)
+                  </span>
+                  <span class="caret-facet-accent">
+                    x
+                  </span>
+                </a>
+
+              </div>
+            </div>
+            <script>
+            $(function() {
+              $('#desktop_LOCATION_collapsible').addClass('collapse');
+              $("#desktop_LOCATION_collapsed_facet_text").click(function () {
+                if ($("#desktop_LOCATION_collapsible").hasClass('in')) {
+                  $("#desktop_LOCATION_collapsed_facet_text").text('View More');
+                } else {
+                  $("#desktop_LOCATION_collapsed_facet_text").text('View Less');
+                }
+              });
+            });
+            </script>
+            <div class="view-facet-btn-container " >
+              <a id="desktop_LOCATION_collapsed_facet_text"
+              class="view_facet_text collapsed"
+              role="button"
+              data-toggle="collapse"
+              data-target="#desktop_LOCATION_collapsible"
+              href="">
+              View More
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+<div class="col-xs-12 col-md-9 jrp-mobile-table desktop-results-container">
+  <div class="jrp-table-container table-container ">
+    <table id="job-result-table" class="table">
+      <tbody>
+        <tr id="job-result-table-header-table-row" class="hidden-xs">
+          <th class="job-result-header" scope="col">
+            <a id="desktop-job-title-sort" class="label-strong"
+            href="/en-US/search?orderby=title">Job Title</a>
+          </th>
+          <th class="job-result-header hidden" scope="col">
+            <a id="desktop-job-company-sort"
+            class="label-strong"
+            href="/en-US/search?orderby=company">Company</a>
+          </th>
+          <th class="job-result-header" scope="col">
+            <a id="desktop-job-location-sort"
+            class="label-strong"
+            href="/en-US/search?orderby=location">Location</a>
+          </th>
+          <th class="job-result-header" scope="col">
+            <a id="desktop-job-date-sort" class="label-strong"
+            href="/en-US/search?orderby=date">Date Posted</a>
+          </th>
+          <th id="header-section-for-side-carets ^show_jrp_caret^" class="job-result-header" scope="col">
+          </th>
+        </tr>
+        <tr class="job-result">
+          <td class="col-md-5">
+            <a href="/en-US/job/compounder-process-chemist/J3J6H476NWH55V3RZ6X" class="primary-text-color job-result-title">Compounder / Process Chemist</a>
+          </td>
+          <td class="col-md-3 hidden">
+            ^company_name^
+          </td>
+          <td class="col-md-2 job-result-location-cell">
+            SouthWest Arkansas
+          </td>
+          <td class="col-md-2 job-result-date-posted-cell">
+            5/14/2017
+          </td>
+          <td class="col-md-1 ">
+            <a href="/en-US/job/compounder-process-chemist/J3J6H476NWH55V3RZ6X" class="caret-result-item"><span class="glyphicon glyphicon-menu-right"></span></a>
+          </td>
+        </tr>
+        <tr class="job-result">
+          <td class="col-md-5">
+            <a href="/en-US/job/maintenance-technician/J3H5NN6B28G70HBX4VB" class="primary-text-color job-result-title">Maintenance Technician</a>
+          </td>
+          <td class="col-md-3 hidden">
+            ^company_name^
+          </td>
+          <td class="col-md-2 job-result-location-cell">
+            Central Tennessee
+          </td>
+          <td class="col-md-2 job-result-date-posted-cell">
+            5/14/2017
+          </td>
+          <td class="col-md-1 ">
+            <a href="/en-US/job/maintenance-technician/J3H5NN6B28G70HBX4VB" class="caret-result-item"><span class="glyphicon glyphicon-menu-right"></span></a>
+          </td>
+        </tr>
+        <tr class="job-result">
+          <td class="col-md-5">
+            <a href="/en-US/job/safety-manager/J3K376621RSGJ69VZY0" class="primary-text-color job-result-title">Safety Manager</a>
+          </td>
+          <td class="col-md-3 hidden">
+            ^company_name^
+          </td>
+          <td class="col-md-2 job-result-location-cell">
+            Central Wisconsin
+          </td>
+          <td class="col-md-2 job-result-date-posted-cell">
+            5/14/2017
+          </td>
+          <td class="col-md-1 ">
+            <a href="/en-US/job/safety-manager/J3K376621RSGJ69VZY0" class="caret-result-item"><span class="glyphicon glyphicon-menu-right"></span></a>
+          </td>
+        </tr>
+        <tr class="job-result">
+          <td class="col-md-5">
+            <a href="/en-US/job/electrical-engineer-controls/J3H7FP6671B6105L3WW" class="primary-text-color job-result-title">Electrical Engineer / Controls</a>
+          </td>
+          <td class="col-md-3 hidden">
+            ^company_name^
+          </td>
+          <td class="col-md-2 job-result-location-cell">
+            Central Tennessee
+          </td>
+          <td class="col-md-2 job-result-date-posted-cell">
+            5/14/2017
+          </td>
+          <td class="col-md-1 ">
+            <a href="/en-US/job/electrical-engineer-controls/J3H7FP6671B6105L3WW" class="caret-result-item"><span class="glyphicon glyphicon-menu-right"></span></a>
+          </td>
+        </tr>
+        <tr class="job-result">
+          <td class="col-md-5">
+            <a href="/en-US/job/maintenance-technician/JJH09Q6X25SHXMPV83L" class="primary-text-color job-result-title">Maintenance Technician</a>
+          </td>
+          <td class="col-md-3 hidden">
+            ^company_name^
+          </td>
+          <td class="col-md-2 job-result-location-cell">
+            Central Tennessee
+          </td>
+          <td class="col-md-2 job-result-date-posted-cell">
+            5/13/2017
+          </td>
+          <td class="col-md-1 ">
+            <a href="/en-US/job/maintenance-technician/JJH09Q6X25SHXMPV83L" class="caret-result-item"><span class="glyphicon glyphicon-menu-right"></span></a>
+          </td>
+        </tr>
+        <tr class="job-result">
+          <td class="col-md-5">
+            <a href="/en-US/job/electrical-engineer-controls/J9066V6DSPH9326VWXW" class="primary-text-color job-result-title">Electrical Engineer / Controls</a>
+          </td>
+          <td class="col-md-3 hidden">
+            ^company_name^
+          </td>
+          <td class="col-md-2 job-result-location-cell">
+            Central Tennessee
+          </td>
+          <td class="col-md-2 job-result-date-posted-cell">
+            5/13/2017
+          </td>
+          <td class="col-md-1 ">
+            <a href="/en-US/job/electrical-engineer-controls/J9066V6DSPH9326VWXW" class="caret-result-item"><span class="glyphicon glyphicon-menu-right"></span></a>
+          </td>
+        </tr>
+        <tr class="job-result">
+          <td class="col-md-5">
+            <a href="/en-US/job/compounder-process-chemist/JGW55N753NFD71MFJ5K" class="primary-text-color job-result-title">Compounder / Process Chemist</a>
+          </td>
+          <td class="col-md-3 hidden">
+            ^company_name^
+          </td>
+          <td class="col-md-2 job-result-location-cell">
+            SouthWest Arkansas
+          </td>
+          <td class="col-md-2 job-result-date-posted-cell">
+            5/13/2017
+          </td>
+          <td class="col-md-1 ">
+            <a href="/en-US/job/compounder-process-chemist/JGW55N753NFD71MFJ5K" class="caret-result-item"><span class="glyphicon glyphicon-menu-right"></span></a>
+          </td>
+        </tr>
+        <tr class="job-result">
+          <td class="col-md-5">
+            <a href="/en-US/job/safety-manager/J8Q6KB6TCN8102S72J7" class="primary-text-color job-result-title">Safety Manager</a>
+          </td>
+          <td class="col-md-3 hidden">
+            ^company_name^
+          </td>
+          <td class="col-md-2 job-result-location-cell">
+            Central Wisconsin
+          </td>
+          <td class="col-md-2 job-result-date-posted-cell">
+            5/13/2017
+          </td>
+          <td class="col-md-1 ">
+            <a href="/en-US/job/safety-manager/J8Q6KB6TCN8102S72J7" class="caret-result-item"><span class="glyphicon glyphicon-menu-right"></span></a>
+          </td>
+        </tr>
+        <tr class="job-result">
+          <td class="col-md-5">
+            <a href="/en-US/job/sales-executive/J3L66F6QB0Z63KG5GT5" class="primary-text-color job-result-title">Sales Executive</a>
+          </td>
+          <td class="col-md-3 hidden">
+            ^company_name^
+          </td>
+          <td class="col-md-2 job-result-location-cell">
+            Houston, TX
+          </td>
+          <td class="col-md-2 job-result-date-posted-cell">
+            5/13/2017
+          </td>
+          <td class="col-md-1 ">
+            <a href="/en-US/job/sales-executive/J3L66F6QB0Z63KG5GT5" class="caret-result-item"><span class="glyphicon glyphicon-menu-right"></span></a>
+          </td>
+        </tr>
+        <tr class="job-result">
+          <td class="col-md-5">
+            <a href="/en-US/job/sales-executive/JGW4486ZFSSJKCPNVXH" class="primary-text-color job-result-title">Sales Executive</a>
+          </td>
+          <td class="col-md-3 hidden">
+            ^company_name^
+          </td>
+          <td class="col-md-2 job-result-location-cell">
+            Houston, TX
+          </td>
+          <td class="col-md-2 job-result-date-posted-cell">
+            5/12/2017
+          </td>
+          <td class="col-md-1 ">
+            <a href="/en-US/job/sales-executive/JGW4486ZFSSJKCPNVXH" class="caret-result-item"><span class="glyphicon glyphicon-menu-right"></span></a>
+          </td>
+        </tr>
+        <tr class="job-result">
+          <td class="col-md-5">
+            <a href="/en-US/job/engineering-administrator/J3L4WD6BTV5RBFNBJQD" class="primary-text-color job-result-title">Engineering Administrator</a>
+          </td>
+          <td class="col-md-3 hidden">
+            ^company_name^
+          </td>
+          <td class="col-md-2 job-result-location-cell">
+            Durham, NC
+          </td>
+          <td class="col-md-2 job-result-date-posted-cell">
+            5/12/2017
+          </td>
+          <td class="col-md-1 ">
+            <a href="/en-US/job/engineering-administrator/J3L4WD6BTV5RBFNBJQD" class="caret-result-item"><span class="glyphicon glyphicon-menu-right"></span></a>
+          </td>
+        </tr>
+        <tr class="job-result">
+          <td class="col-md-5">
+            <a href="/en-US/job/engineering-administrator/JGX56D632TD51ZK8VZ0" class="primary-text-color job-result-title">Engineering Administrator</a>
+          </td>
+          <td class="col-md-3 hidden">
+            ^company_name^
+          </td>
+          <td class="col-md-2 job-result-location-cell">
+            Durham, NC
+          </td>
+          <td class="col-md-2 job-result-date-posted-cell">
+            5/11/2017
+          </td>
+          <td class="col-md-1 ">
+            <a href="/en-US/job/engineering-administrator/JGX56D632TD51ZK8VZ0" class="caret-result-item"><span class="glyphicon glyphicon-menu-right"></span></a>
+          </td>
+        </tr>
+        <tr class="job-result">
+          <td class="col-md-5">
+            <a href="/en-US/job/quality-control-manager/J3G0HR77KVRZ6JX31RN" class="primary-text-color job-result-title">Quality Control Manager</a>
+          </td>
+          <td class="col-md-3 hidden">
+            ^company_name^
+          </td>
+          <td class="col-md-2 job-result-location-cell">
+            Denver, CO
+          </td>
+          <td class="col-md-2 job-result-date-posted-cell">
+            5/11/2017
+          </td>
+          <td class="col-md-1 ">
+            <a href="/en-US/job/quality-control-manager/J3G0HR77KVRZ6JX31RN" class="caret-result-item"><span class="glyphicon glyphicon-menu-right"></span></a>
+          </td>
+        </tr>
+        <tr class="job-result">
+          <td class="col-md-5">
+            <a href="/en-US/job/quality-control-manager/JJH2Z76V76F85KJCGC8" class="primary-text-color job-result-title">Quality Control Manager</a>
+          </td>
+          <td class="col-md-3 hidden">
+            ^company_name^
+          </td>
+          <td class="col-md-2 job-result-location-cell">
+            Denver, CO
+          </td>
+          <td class="col-md-2 job-result-date-posted-cell">
+            5/10/2017
+          </td>
+          <td class="col-md-1 ">
+            <a href="/en-US/job/quality-control-manager/JJH2Z76V76F85KJCGC8" class="caret-result-item"><span class="glyphicon glyphicon-menu-right"></span></a>
+          </td>
+        </tr>
+        <tr class="job-result">
+          <td class="col-md-5">
+            <a href="/en-US/job/plant-manager/J3K6VS6BBM375XKZPKF" class="primary-text-color job-result-title">Plant Manager</a>
+          </td>
+          <td class="col-md-3 hidden">
+            ^company_name^
+          </td>
+          <td class="col-md-2 job-result-location-cell">
+            Meadville, PA
+          </td>
+          <td class="col-md-2 job-result-date-posted-cell">
+            5/10/2017
+          </td>
+          <td class="col-md-1 ">
+            <a href="/en-US/job/plant-manager/J3K6VS6BBM375XKZPKF" class="caret-result-item"><span class="glyphicon glyphicon-menu-right"></span></a>
+          </td>
+        </tr>
+        <tr class="job-result">
+          <td class="col-md-5">
+            <a href="/en-US/job/programmer-analyst/J3F4Q862WS4BRYGRT34" class="primary-text-color job-result-title">Programmer Analyst</a>
+          </td>
+          <td class="col-md-3 hidden">
+            ^company_name^
+          </td>
+          <td class="col-md-2 job-result-location-cell">
+            Marietta, OH
+          </td>
+          <td class="col-md-2 job-result-date-posted-cell">
+            5/10/2017
+          </td>
+          <td class="col-md-1 ">
+            <a href="/en-US/job/programmer-analyst/J3F4Q862WS4BRYGRT34" class="caret-result-item"><span class="glyphicon glyphicon-menu-right"></span></a>
+          </td>
+        </tr>
+        <tr class="job-result">
+          <td class="col-md-5">
+            <a href="/en-US/job/programmer-analyst/JGW74K70B3BJ13DVVDR" class="primary-text-color job-result-title">Programmer Analyst</a>
+          </td>
+          <td class="col-md-3 hidden">
+            ^company_name^
+          </td>
+          <td class="col-md-2 job-result-location-cell">
+            Marietta, OH
+          </td>
+          <td class="col-md-2 job-result-date-posted-cell">
+            5/9/2017
+          </td>
+          <td class="col-md-1 ">
+            <a href="/en-US/job/programmer-analyst/JGW74K70B3BJ13DVVDR" class="caret-result-item"><span class="glyphicon glyphicon-menu-right"></span></a>
+          </td>
+        </tr>
+        <tr class="job-result">
+          <td class="col-md-5">
+            <a href="/en-US/job/plant-manager/JHT6BS61P45TX1PB2XB" class="primary-text-color job-result-title">Plant Manager</a>
+          </td>
+          <td class="col-md-3 hidden">
+            ^company_name^
+          </td>
+          <td class="col-md-2 job-result-location-cell">
+            Meadville, PA
+          </td>
+          <td class="col-md-2 job-result-date-posted-cell">
+            5/9/2017
+          </td>
+          <td class="col-md-1 ">
+            <a href="/en-US/job/plant-manager/JHT6BS61P45TX1PB2XB" class="caret-result-item"><span class="glyphicon glyphicon-menu-right"></span></a>
+          </td>
+        </tr>
+        <tr class="job-result">
+          <td class="col-md-5">
+            <a href="/en-US/job/maintenance-engineer/J3J3L0660BXQQG6N6RN" class="primary-text-color job-result-title">Maintenance Engineer</a>
+          </td>
+          <td class="col-md-3 hidden">
+            ^company_name^
+          </td>
+          <td class="col-md-2 job-result-location-cell">
+            Burlington, NC
+          </td>
+          <td class="col-md-2 job-result-date-posted-cell">
+            5/9/2017
+          </td>
+          <td class="col-md-1 ">
+            <a href="/en-US/job/maintenance-engineer/J3J3L0660BXQQG6N6RN" class="caret-result-item"><span class="glyphicon glyphicon-menu-right"></span></a>
+          </td>
+        </tr>
+        <tr class="job-result">
+          <td class="col-md-5">
+            <a href="/en-US/job/senior-controls-engineer/J3G2DR6P2VVT4Z0JSFF" class="primary-text-color job-result-title">Senior Controls Engineer</a>
+          </td>
+          <td class="col-md-3 hidden">
+            ^company_name^
+          </td>
+          <td class="col-md-2 job-result-location-cell">
+            Grenada, MS
+          </td>
+          <td class="col-md-2 job-result-date-posted-cell">
+            5/9/2017
+          </td>
+          <td class="col-md-1 ">
+            <a href="/en-US/job/senior-controls-engineer/J3G2DR6P2VVT4Z0JSFF" class="caret-result-item"><span class="glyphicon glyphicon-menu-right"></span></a>
+          </td>
+        </tr>
+        <tr class="job-result">
+          <td class="col-md-5">
+            <a href="/en-US/job/buyer-packaging/J3J8B25Z14JZGXCY8QJ" class="primary-text-color job-result-title">Buyer-Packaging</a>
+          </td>
+          <td class="col-md-3 hidden">
+            ^company_name^
+          </td>
+          <td class="col-md-2 job-result-location-cell">
+            New Holland, PA
+          </td>
+          <td class="col-md-2 job-result-date-posted-cell">
+            5/9/2017
+          </td>
+          <td class="col-md-1 ">
+            <a href="/en-US/job/buyer-packaging/J3J8B25Z14JZGXCY8QJ" class="caret-result-item"><span class="glyphicon glyphicon-menu-right"></span></a>
+          </td>
+        </tr>
+        <tr class="job-result">
+          <td class="col-md-5">
+            <a href="/en-US/job/buyer-packaging/JHL55Q6LSPGNWPR772N" class="primary-text-color job-result-title">Buyer-Packaging</a>
+          </td>
+          <td class="col-md-3 hidden">
+            ^company_name^
+          </td>
+          <td class="col-md-2 job-result-location-cell">
+            New Holland, PA
+          </td>
+          <td class="col-md-2 job-result-date-posted-cell">
+            5/8/2017
+          </td>
+          <td class="col-md-1 ">
+            <a href="/en-US/job/buyer-packaging/JHL55Q6LSPGNWPR772N" class="caret-result-item"><span class="glyphicon glyphicon-menu-right"></span></a>
+          </td>
+        </tr>
+        <tr class="job-result">
+          <td class="col-md-5">
+            <a href="/en-US/job/maintenance-engineer/JJ50FX6L3PHTW8GXMGW" class="primary-text-color job-result-title">Maintenance Engineer</a>
+          </td>
+          <td class="col-md-3 hidden">
+            ^company_name^
+          </td>
+          <td class="col-md-2 job-result-location-cell">
+            Burlington, NC
+          </td>
+          <td class="col-md-2 job-result-date-posted-cell">
+            5/8/2017
+          </td>
+          <td class="col-md-1 ">
+            <a href="/en-US/job/maintenance-engineer/JJ50FX6L3PHTW8GXMGW" class="caret-result-item"><span class="glyphicon glyphicon-menu-right"></span></a>
+          </td>
+        </tr>
+        <tr class="job-result">
+          <td class="col-md-5">
+            <a href="/en-US/job/senior-controls-engineer/JHT6PC754P2NK5GBYXC" class="primary-text-color job-result-title">Senior Controls Engineer</a>
+          </td>
+          <td class="col-md-3 hidden">
+            ^company_name^
+          </td>
+          <td class="col-md-2 job-result-location-cell">
+            Grenada, MS
+          </td>
+          <td class="col-md-2 job-result-date-posted-cell">
+            5/8/2017
+          </td>
+          <td class="col-md-1 ">
+            <a href="/en-US/job/senior-controls-engineer/JHT6PC754P2NK5GBYXC" class="caret-result-item"><span class="glyphicon glyphicon-menu-right"></span></a>
+          </td>
+        </tr>
+        <tr class="job-result">
+          <td class="col-md-5">
+            <a href="/en-US/job/buyer/J3G5ZZ6VBYXKG5481V0" class="primary-text-color job-result-title">BUYER</a>
+          </td>
+          <td class="col-md-3 hidden">
+            ^company_name^
+          </td>
+          <td class="col-md-2 job-result-location-cell">
+            Grenada, MS
+          </td>
+          <td class="col-md-2 job-result-date-posted-cell">
+            5/6/2017
+          </td>
+          <td class="col-md-1 ">
+            <a href="/en-US/job/buyer/J3G5ZZ6VBYXKG5481V0" class="caret-result-item"><span class="glyphicon glyphicon-menu-right"></span></a>
+          </td>
+        </tr>
+        <tr class="job-result">
+          <td class="col-md-5">
+            <a href="/en-US/job/field-service-technician/J3J73J70GGXM1HPM8D4" class="primary-text-color job-result-title">Field Service Technician</a>
+          </td>
+          <td class="col-md-3 hidden">
+            ^company_name^
+          </td>
+          <td class="col-md-2 job-result-location-cell">
+            Detroit, MI
+          </td>
+          <td class="col-md-2 job-result-date-posted-cell">
+            5/6/2017
+          </td>
+          <td class="col-md-1 ">
+            <a href="/en-US/job/field-service-technician/J3J73J70GGXM1HPM8D4" class="caret-result-item"><span class="glyphicon glyphicon-menu-right"></span></a>
+          </td>
+        </tr>
+        <tr class="job-result">
+          <td class="col-md-5">
+            <a href="/en-US/job/process-engineer-flat-glass/J3G6J56NRZXTFRYHVW1" class="primary-text-color job-result-title">PROCESS ENGINEER - Flat Glass</a>
+          </td>
+          <td class="col-md-3 hidden">
+            ^company_name^
+          </td>
+          <td class="col-md-2 job-result-location-cell">
+            Dallas, TX
+          </td>
+          <td class="col-md-2 job-result-date-posted-cell">
+            5/6/2017
+          </td>
+          <td class="col-md-1 ">
+            <a href="/en-US/job/process-engineer-flat-glass/J3G6J56NRZXTFRYHVW1" class="caret-result-item"><span class="glyphicon glyphicon-menu-right"></span></a>
+          </td>
+        </tr>
+        <tr class="job-result">
+          <td class="col-md-5">
+            <a href="/en-US/job/production-supervisor/J3K00J5W83BQ89M8H7Y" class="primary-text-color job-result-title">PRODUCTION SUPERVISOR</a>
+          </td>
+          <td class="col-md-3 hidden">
+            ^company_name^
+          </td>
+          <td class="col-md-2 job-result-location-cell">
+            Houston, TX
+          </td>
+          <td class="col-md-2 job-result-date-posted-cell">
+            5/6/2017
+          </td>
+          <td class="col-md-1 ">
+            <a href="/en-US/job/production-supervisor/J3K00J5W83BQ89M8H7Y" class="caret-result-item"><span class="glyphicon glyphicon-menu-right"></span></a>
+          </td>
+        </tr>
+        <tr class="job-result">
+          <td class="col-md-5">
+            <a href="/en-US/job/maintenance-supervisor/J3L3N86KND65YYCH672" class="primary-text-color job-result-title">Maintenance Supervisor</a>
+          </td>
+          <td class="col-md-3 hidden">
+            ^company_name^
+          </td>
+          <td class="col-md-2 job-result-location-cell">
+            Central Tennessee
+          </td>
+          <td class="col-md-2 job-result-date-posted-cell">
+            5/6/2017
+          </td>
+          <td class="col-md-1 ">
+            <a href="/en-US/job/maintenance-supervisor/J3L3N86KND65YYCH672" class="caret-result-item"><span class="glyphicon glyphicon-menu-right"></span></a>
+          </td>
+        </tr>
+        <tr class="job-result">
+          <td class="col-md-5">
+            <a href="/en-US/job/process-engineer-flat-glass/JHP4NB6WHHYRCSQRRVM" class="primary-text-color job-result-title">PROCESS ENGINEER - Flat Glass</a>
+          </td>
+          <td class="col-md-3 hidden">
+            ^company_name^
+          </td>
+          <td class="col-md-2 job-result-location-cell">
+            Dallas, TX
+          </td>
+          <td class="col-md-2 job-result-date-posted-cell">
+            5/5/2017
+          </td>
+          <td class="col-md-1 ">
+            <a href="/en-US/job/process-engineer-flat-glass/JHP4NB6WHHYRCSQRRVM" class="caret-result-item"><span class="glyphicon glyphicon-menu-right"></span></a>
+          </td>
+        </tr>
+        <tr class="job-result">
+          <td class="col-md-5">
+            <a href="/en-US/job/production-supervisor/JJ55NG63MWMG26WKXSY" class="primary-text-color job-result-title">PRODUCTION SUPERVISOR</a>
+          </td>
+          <td class="col-md-3 hidden">
+            ^company_name^
+          </td>
+          <td class="col-md-2 job-result-location-cell">
+            Houston, TX
+          </td>
+          <td class="col-md-2 job-result-date-posted-cell">
+            5/5/2017
+          </td>
+          <td class="col-md-1 ">
+            <a href="/en-US/job/production-supervisor/JJ55NG63MWMG26WKXSY" class="caret-result-item"><span class="glyphicon glyphicon-menu-right"></span></a>
+          </td>
+        </tr>
+        <tr class="job-result">
+          <td class="col-md-5">
+            <a href="/en-US/job/maintenance-supervisor/J8G6PY6G84L8S8DR2Z3" class="primary-text-color job-result-title">Maintenance Supervisor</a>
+          </td>
+          <td class="col-md-3 hidden">
+            ^company_name^
+          </td>
+          <td class="col-md-2 job-result-location-cell">
+            Central Tennessee
+          </td>
+          <td class="col-md-2 job-result-date-posted-cell">
+            5/5/2017
+          </td>
+          <td class="col-md-1 ">
+            <a href="/en-US/job/maintenance-supervisor/J8G6PY6G84L8S8DR2Z3" class="caret-result-item"><span class="glyphicon glyphicon-menu-right"></span></a>
+          </td>
+        </tr>
+        <tr class="job-result">
+          <td class="col-md-5">
+            <a href="/en-US/job/buyer/JCH35K6WYZ4F1Z8WFHJ" class="primary-text-color job-result-title">BUYER</a>
+          </td>
+          <td class="col-md-3 hidden">
+            ^company_name^
+          </td>
+          <td class="col-md-2 job-result-location-cell">
+            Grenada, MS
+          </td>
+          <td class="col-md-2 job-result-date-posted-cell">
+            5/5/2017
+          </td>
+          <td class="col-md-1 ">
+            <a href="/en-US/job/buyer/JCH35K6WYZ4F1Z8WFHJ" class="caret-result-item"><span class="glyphicon glyphicon-menu-right"></span></a>
+          </td>
+        </tr>
+        <tr class="job-result">
+          <td class="col-md-5">
+            <a href="/en-US/job/field-service-technician/JJH72Y5WN9BYYD6W2WS" class="primary-text-color job-result-title">Field Service Technician</a>
+          </td>
+          <td class="col-md-3 hidden">
+            ^company_name^
+          </td>
+          <td class="col-md-2 job-result-location-cell">
+            Detroit, MI
+          </td>
+          <td class="col-md-2 job-result-date-posted-cell">
+            5/5/2017
+          </td>
+          <td class="col-md-1 ">
+            <a href="/en-US/job/field-service-technician/JJH72Y5WN9BYYD6W2WS" class="caret-result-item"><span class="glyphicon glyphicon-menu-right"></span></a>
+          </td>
+        </tr>
+        <tr class="job-result">
+          <td class="col-md-5">
+            <a href="/en-US/job/production-manager-hvac/J3K4ZY6GNS1J3HM2482" class="primary-text-color job-result-title">Production Manager- HVAC</a>
+          </td>
+          <td class="col-md-3 hidden">
+            ^company_name^
+          </td>
+          <td class="col-md-2 job-result-location-cell">
+            Louisville, KY
+          </td>
+          <td class="col-md-2 job-result-date-posted-cell">
+            5/5/2017
+          </td>
+          <td class="col-md-1 ">
+            <a href="/en-US/job/production-manager-hvac/J3K4ZY6GNS1J3HM2482" class="caret-result-item"><span class="glyphicon glyphicon-menu-right"></span></a>
+          </td>
+        </tr>
+        <tr class="job-result">
+          <td class="col-md-5">
+            <a href="/en-US/job/technical-support-engineer/J3H6596GHZQ4L8CQLLS" class="primary-text-color job-result-title">Technical Support Engineer</a>
+          </td>
+          <td class="col-md-3 hidden">
+            ^company_name^
+          </td>
+          <td class="col-md-2 job-result-location-cell">
+            Flint, MI
+          </td>
+          <td class="col-md-2 job-result-date-posted-cell">
+            5/5/2017
+          </td>
+          <td class="col-md-1 ">
+            <a href="/en-US/job/technical-support-engineer/J3H6596GHZQ4L8CQLLS" class="caret-result-item"><span class="glyphicon glyphicon-menu-right"></span></a>
+          </td>
+        </tr>
+        <tr class="job-result">
+          <td class="col-md-5">
+            <a href="/en-US/job/production-supervisor/J3F31R69LQQ9P0WX078" class="primary-text-color job-result-title">Production Supervisor</a>
+          </td>
+          <td class="col-md-3 hidden">
+            ^company_name^
+          </td>
+          <td class="col-md-2 job-result-location-cell">
+            Dallas, TX
+          </td>
+          <td class="col-md-2 job-result-date-posted-cell">
+            5/5/2017
+          </td>
+          <td class="col-md-1 ">
+            <a href="/en-US/job/production-supervisor/J3F31R69LQQ9P0WX078" class="caret-result-item"><span class="glyphicon glyphicon-menu-right"></span></a>
+          </td>
+        </tr>
+        <tr class="job-result">
+          <td class="col-md-5">
+            <a href="/en-US/job/project-engineer-biotech/J3H2W370FZH4H3WFYHF" class="primary-text-color job-result-title">Project Engineer- Biotech</a>
+          </td>
+          <td class="col-md-3 hidden">
+            ^company_name^
+          </td>
+          <td class="col-md-2 job-result-location-cell">
+            Framingham, MA
+          </td>
+          <td class="col-md-2 job-result-date-posted-cell">
+            5/5/2017
+          </td>
+          <td class="col-md-1 ">
+            <a href="/en-US/job/project-engineer-biotech/J3H2W370FZH4H3WFYHF" class="caret-result-item"><span class="glyphicon glyphicon-menu-right"></span></a>
+          </td>
+        </tr>
+        <tr class="job-result">
+          <td class="col-md-5">
+            <a href="/en-US/job/project-engineer-led-lighting-systems/J3F3545VPS9W76743DJ" class="primary-text-color job-result-title">Project Engineer - LED Lighting Systems</a>
+          </td>
+          <td class="col-md-3 hidden">
+            ^company_name^
+          </td>
+          <td class="col-md-2 job-result-location-cell">
+            Jamestown, NY
+          </td>
+          <td class="col-md-2 job-result-date-posted-cell">
+            5/5/2017
+          </td>
+          <td class="col-md-1 ">
+            <a href="/en-US/job/project-engineer-led-lighting-systems/J3F3545VPS9W76743DJ" class="caret-result-item"><span class="glyphicon glyphicon-menu-right"></span></a>
+          </td>
+        </tr>
+        <tr class="job-result">
+          <td class="col-md-5">
+            <a href="/en-US/job/project-engineer-automotive-mirror-projects/J3L5VX6WRMBB0PFFQ4Y" class="primary-text-color job-result-title">PROJECT ENGINEER - Automotive - Mirror Projects</a>
+          </td>
+          <td class="col-md-3 hidden">
+            ^company_name^
+          </td>
+          <td class="col-md-2 job-result-location-cell">
+            Jamestown, NY
+          </td>
+          <td class="col-md-2 job-result-date-posted-cell">
+            5/5/2017
+          </td>
+          <td class="col-md-1 ">
+            <a href="/en-US/job/project-engineer-automotive-mirror-projects/J3L5VX6WRMBB0PFFQ4Y" class="caret-result-item"><span class="glyphicon glyphicon-menu-right"></span></a>
+          </td>
+        </tr>
+        <tr class="job-result">
+          <td class="col-md-5">
+            <a href="/en-US/job/project-engineer-led-lighting-systems/J8J2LD6H8JGM20ZZZ0F" class="primary-text-color job-result-title">Project Engineer - LED Lighting Systems</a>
+          </td>
+          <td class="col-md-3 hidden">
+            ^company_name^
+          </td>
+          <td class="col-md-2 job-result-location-cell">
+            Jamestown, NY
+          </td>
+          <td class="col-md-2 job-result-date-posted-cell">
+            5/4/2017
+          </td>
+          <td class="col-md-1 ">
+            <a href="/en-US/job/project-engineer-led-lighting-systems/J8J2LD6H8JGM20ZZZ0F" class="caret-result-item"><span class="glyphicon glyphicon-menu-right"></span></a>
+          </td>
+        </tr>
+        <tr class="job-result">
+          <td class="col-md-5">
+            <a href="/en-US/job/project-engineer-automotive-mirror-projects/J8J2FV5ZX652BNFHDSH" class="primary-text-color job-result-title">PROJECT ENGINEER - Automotive - Mirror Projects</a>
+          </td>
+          <td class="col-md-3 hidden">
+            ^company_name^
+          </td>
+          <td class="col-md-2 job-result-location-cell">
+            Jamestown, NY
+          </td>
+          <td class="col-md-2 job-result-date-posted-cell">
+            5/4/2017
+          </td>
+          <td class="col-md-1 ">
+            <a href="/en-US/job/project-engineer-automotive-mirror-projects/J8J2FV5ZX652BNFHDSH" class="caret-result-item"><span class="glyphicon glyphicon-menu-right"></span></a>
+          </td>
+        </tr>
+        <tr class="job-result">
+          <td class="col-md-5">
+            <a href="/en-US/job/technical-support-engineer/JJ57PR6VJB5PQTDJY4J" class="primary-text-color job-result-title">Technical Support Engineer</a>
+          </td>
+          <td class="col-md-3 hidden">
+            ^company_name^
+          </td>
+          <td class="col-md-2 job-result-location-cell">
+            Flint, MI
+          </td>
+          <td class="col-md-2 job-result-date-posted-cell">
+            5/4/2017
+          </td>
+          <td class="col-md-1 ">
+            <a href="/en-US/job/technical-support-engineer/JJ57PR6VJB5PQTDJY4J" class="caret-result-item"><span class="glyphicon glyphicon-menu-right"></span></a>
+          </td>
+        </tr>
+        <tr class="job-result">
+          <td class="col-md-5">
+            <a href="/en-US/job/production-supervisor/J905QB5YT0RX87QTC8J" class="primary-text-color job-result-title">Production Supervisor</a>
+          </td>
+          <td class="col-md-3 hidden">
+            ^company_name^
+          </td>
+          <td class="col-md-2 job-result-location-cell">
+            Dallas, TX
+          </td>
+          <td class="col-md-2 job-result-date-posted-cell">
+            5/4/2017
+          </td>
+          <td class="col-md-1 ">
+            <a href="/en-US/job/production-supervisor/J905QB5YT0RX87QTC8J" class="caret-result-item"><span class="glyphicon glyphicon-menu-right"></span></a>
+          </td>
+        </tr>
+        <tr class="job-result">
+          <td class="col-md-5">
+            <a href="/en-US/job/production-manager-hvac/JHM6SB6YVKCKX4MC7R2" class="primary-text-color job-result-title">Production Manager- HVAC</a>
+          </td>
+          <td class="col-md-3 hidden">
+            ^company_name^
+          </td>
+          <td class="col-md-2 job-result-location-cell">
+            Louisville, KY
+          </td>
+          <td class="col-md-2 job-result-date-posted-cell">
+            5/4/2017
+          </td>
+          <td class="col-md-1 ">
+            <a href="/en-US/job/production-manager-hvac/JHM6SB6YVKCKX4MC7R2" class="caret-result-item"><span class="glyphicon glyphicon-menu-right"></span></a>
+          </td>
+        </tr>
+        <tr class="job-result">
+          <td class="col-md-5">
+            <a href="/en-US/job/project-engineer-biotech/JJH74S76TH6W01TX0HQ" class="primary-text-color job-result-title">Project Engineer- Biotech</a>
+          </td>
+          <td class="col-md-3 hidden">
+            ^company_name^
+          </td>
+          <td class="col-md-2 job-result-location-cell">
+            Framingham, MA
+          </td>
+          <td class="col-md-2 job-result-date-posted-cell">
+            5/4/2017
+          </td>
+          <td class="col-md-1 ">
+            <a href="/en-US/job/project-engineer-biotech/JJH74S76TH6W01TX0HQ" class="caret-result-item"><span class="glyphicon glyphicon-menu-right"></span></a>
+          </td>
+        </tr>
+        <tr class="job-result">
+          <td class="col-md-5">
+            <a href="/en-US/job/manufacturing-systems-engineer/J3J5QB6Y8YVTBZKX8QP" class="primary-text-color job-result-title">Manufacturing Systems Engineer</a>
+          </td>
+          <td class="col-md-3 hidden">
+            ^company_name^
+          </td>
+          <td class="col-md-2 job-result-location-cell">
+            Bowling Green, OH
+          </td>
+          <td class="col-md-2 job-result-date-posted-cell">
+            5/4/2017
+          </td>
+          <td class="col-md-1 ">
+            <a href="/en-US/job/manufacturing-systems-engineer/J3J5QB6Y8YVTBZKX8QP" class="caret-result-item"><span class="glyphicon glyphicon-menu-right"></span></a>
+          </td>
+        </tr>
+        <tr class="job-result">
+          <td class="col-md-5">
+            <a href="/en-US/job/manufacturing-systems-engineer/JHP0CX70LJ3ZNTRVPW6" class="primary-text-color job-result-title">Manufacturing Systems Engineer</a>
+          </td>
+          <td class="col-md-3 hidden">
+            ^company_name^
+          </td>
+          <td class="col-md-2 job-result-location-cell">
+            Bowling Green, OH
+          </td>
+          <td class="col-md-2 job-result-date-posted-cell">
+            5/3/2017
+          </td>
+          <td class="col-md-1 ">
+            <a href="/en-US/job/manufacturing-systems-engineer/JHP0CX70LJ3ZNTRVPW6" class="caret-result-item"><span class="glyphicon glyphicon-menu-right"></span></a>
+          </td>
+        </tr>
+        <tr class="job-result">
+          <td class="col-md-5">
+            <a href="/en-US/job/assistant-plant-manager/J3K2WN6NGT0MXKWCM2Y" class="primary-text-color job-result-title">Assistant Plant Manager</a>
+          </td>
+          <td class="col-md-3 hidden">
+            ^company_name^
+          </td>
+          <td class="col-md-2 job-result-location-cell">
+            Jeannette, PA
+          </td>
+          <td class="col-md-2 job-result-date-posted-cell">
+            5/3/2017
+          </td>
+          <td class="col-md-1 ">
+            <a href="/en-US/job/assistant-plant-manager/J3K2WN6NGT0MXKWCM2Y" class="caret-result-item"><span class="glyphicon glyphicon-menu-right"></span></a>
+          </td>
+        </tr>
+        <tr class="job-result">
+          <td class="col-md-5">
+            <a href="/en-US/job/assistant-plant-manager/J907S870X26DP5P9L20" class="primary-text-color job-result-title">Assistant Plant Manager</a>
+          </td>
+          <td class="col-md-3 hidden">
+            ^company_name^
+          </td>
+          <td class="col-md-2 job-result-location-cell">
+            Jeannette, PA
+          </td>
+          <td class="col-md-2 job-result-date-posted-cell">
+            5/2/2017
+          </td>
+          <td class="col-md-1 ">
+            <a href="/en-US/job/assistant-plant-manager/J907S870X26DP5P9L20" class="caret-result-item"><span class="glyphicon glyphicon-menu-right"></span></a>
+          </td>
+        </tr>
+
+      </tbody>
+    </table>
+  </div>
+
+
+  <div id="jrp-bottom-desktop-pagination"
+  class="row jrp-pagination-row  hidden-xs hidden-sm ">
+  <div class="col-xs-12 col-md-3-offset-3 pull-right">
+    <ul class="pagination">
+
+      <li class="active jrp-pagination-number"><a href="/en-US/search?pagenumber=1">1</a></li>
+      <li class=" jrp-pagination-number"><a href="/en-US/search?pagenumber=2">2</a></li>
+      <li class=" jrp-pagination-number"><a href="/en-US/search?pagenumber=3">3</a></li>
+
+      <li class="jrp-desktop-next-page-element"><a class='next-page-caret' href='/en-US/search?pagenumber=2'>></a></li>
+
+    </ul>
+  </div>
+</div>
+</div>
+<div id="jrp-no-job-results-message" class="hide">
+  <div id="no-jobs-message" class="col-xs-12 col-sm-12">No jobs found using the supplied criteria.</div>
+
+</div>
+</div>
+<div id="jrp-bottom-pagination-row-mobile"
+class="row jrp-pagination-row visible-xs visible-sm hidden-md hidden-lg">
+<div id="previous-mobile-pagination-button"
+class="mobile-pagination bold-font col-xs-6 col-sm-6 ">
+
+</div>
+<div id="next-mobile-pagination-button"
+class="mobile-pagination bold-font col-xs-6 col-sm-6 ">
+<a class='secondary-button jrp-mobile-pagination-button next-mobile-page' href='/en-US/search?pagenumber=2'>
+  <span class='mobile-pagination-text'>Next</span>
+</a>
+
+</div>
+</div>
+
+</div>
+
+<!-- End Jobs results -->
+</div>
+</div>
+</div>
+<!-- End Job Results Page (JRP) Content -->
+</section>
+<!-- End Internals section -->
+
+
+<!-- Footer -->
+<footer>
+</footer>
+<!-- End Footer -->
+
+<script type="text/javascript" src="assets/public/cms_base/version/6f4689d70986a2e2958d45f2da08a06746988a66/angular/scripts/tn_scripts.min.js"></script>
+
+</body>
+</html>

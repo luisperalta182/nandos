@@ -1,0 +1,113 @@
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the home page.
+// -----------------------------------------------------------------------------
+
+.nandos-banner{
+  background: url("../img/home_banner.png") no-repeat center center;
+  background-size: cover;
+  height: 320px;
+  position: relative;
+  z-index: 1;
+
+  margin-bottom: -15px;
+
+  -webkit-transform: skewY(-2deg);
+  -moz-transform: skewY(-2deg);
+  -ms-transform: skewY(-2deg);
+  -o-transform: skewY(-2deg);
+  transform: skewY(-2deg);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: initial;
+
+  #SearchHomeDesktop{
+    -webkit-transform: skewY(2deg);
+    -moz-transform: skewY(2deg);
+    -ms-transform: skewY(2deg);
+    -o-transform: skewY(2deg);
+    transform: skewY(2deg);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: initial;
+  }
+
+  .banner-overlay{
+    background: url("../img/home_banner-overlay.png") no-repeat bottom left;
+    background-size: cover;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+  }
+}
+
+@media (min-width: 768px) {
+
+  .nandos-banner{
+    background: url("../img/home_banner.png") no-repeat center center;
+    background-size: cover;
+    height: 420px;
+
+      margin-bottom: 0px;
+
+    .banner-overlay{
+      background: url("../img/home_banner-overlay.png") no-repeat bottom left;
+      background-size: cover;
+      position: absolute;
+      left: 0px;
+      right: 0px;
+      top: 0px;
+      bottom: 0px;
+    }
+  }
+
+}
+
+@media (min-width: 992px) {
+
+  .nandos-banner{
+    background: url("../img/home_banner.png") no-repeat center center;
+    background-size: cover;
+    height: 520px;
+
+    .banner-overlay{
+      background: url("../img/home_banner-overlay.png") no-repeat bottom left;
+      background-size: cover;
+      position: absolute;
+      left: 0px;
+      right: 0px;
+      top: 0px;
+      bottom: 0px;
+    }
+  }
+
+}
+
+@media (min-width: 1200px) {
+
+  .nandos-banner{
+    background: url("../img/home_banner.png") no-repeat center center;
+    background-size: cover;
+    height: 640px;
+
+    .banner-overlay{
+      background: url("../img/home_banner-overlay.png") no-repeat bottom left;
+      background-size: cover;
+      position: absolute;
+      left: 0px;
+      right: 0px;
+      top: 0px;
+      bottom: 0px;
+    }
+
+    // .banner-divider{
+    //   position: absolute;
+    //   left: 0px;
+    //   right: 0px;
+    //   bottom: 0px;
+    //   top: auto;
+    //   height: 3px;
+    //   background-color: $primary-color;
+    // }
+  }
+
+}

@@ -1,0 +1,27 @@
+/*** Styles related to social media icons
+* Specific styles for social items on header or footer please
+* use header o footer file
+***/
+
+///this class could be added to ul tag containing social items
+.social-items {
+  list-style: none;
+}
+
+/// This class could be added to i tags
+/// This skeleton generates social icon with cirle border
+.custom-social {
+  color: $white;
+  font-size: 16px;
+  padding: 10px;
+  width: 40px;
+  background-color: $secondary-color;
+  border-radius: 50px;
+  border: 2px solid $secondary-color;
+
+  @include on-event {
+    color: $white;
+    background-color: shade($secondary-color, 15%);
+    border: 2px solid shade($secondary-color, 15%);
+  }
+}

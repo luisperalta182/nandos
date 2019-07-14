@@ -1,0 +1,48 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the button component.
+// -----------------------------------------------------------------------------
+.btn-general {
+  transition: all 0.5s ease;
+  background-color: $btncolor;
+  padding: 5px 15px;
+  color: $white;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  border-radius: 0px;
+  opacity: 1;
+  font-weight: bold;
+
+  @include on-event {
+    background-color: shade($btncolor, 15%);
+    padding: 5px 15px;
+    color: $white;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 0px;
+    opacity: 1;
+    font-weight: bold;
+  }
+}
+
+.primary-button,
+.btn-join,
+#edit-preference-update-btn,
+#subscription-save-btn {
+  @extend .btn-general;
+  position: relative;
+  display: block;
+}
+
+.btn-default { //btn-default
+  @extend .btn-general;
+
+  &.active, &:active{
+    &.focus, &:focus, &:hover{
+      @extend .btn-general;
+    }
+  }
+}
